@@ -45,7 +45,7 @@ section {
 }
 
 section#banner {
-    height: 670px;
+    min-height: 610px;
     background-image: url('images/img1.jpg');
     background-position: top;
     background-size: cover;
@@ -71,6 +71,7 @@ section div.banner_headline {
     font-size: 70px;
     text-shadow: 1px 1px 5px black;
     max-width: 350px;
+    padding-top: 30px;
 }
 
 .banner_headline h2 {
@@ -81,6 +82,7 @@ section div.banner_headline {
     margin-top: 30px;
     text-shadow: 1px 1px 5px black;
     max-width: 350px;
+    padding-bottom: 30px;
 }
 
 .banner_options {
@@ -163,8 +165,7 @@ section div.banner_headline {
 }
 
 .widget_title {
-    margin: 30px 0px 20px 0px;
-    
+    margin: 30px 0px 20px 0px;  
 }
 
 .widget_title_text {
@@ -174,7 +175,7 @@ section div.banner_headline {
 }
 
 .widget_title_text_bar {
-    width:50px;
+    width: 50px;
     margin-top: 3px;
     border-bottom: 3px solid #36a9e1;
 }
@@ -186,6 +187,21 @@ section div.banner_headline {
 .widget_body {
     display: flex;
     flex-wrap: wrap;
+}
+
+.widget_foto_departments {
+    height: 510px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.widget_desc .foto_departments {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    margin-bottom: 30px;
 }
 
 article {
@@ -229,7 +245,6 @@ article .news_thumb img {
 article .news_title {
     margin: 20px 0px;
     font-size: 20px;
-
 }
 
 article .news_resume {
@@ -263,6 +278,15 @@ footer .container {
     background-color: #39aae1;
 }
 
+.footer_menu1_title, .footer_menu2_title, .footer_menu3_title {
+    font-size: 25px;
+}
+
+.footer_menu1_desc, .footer_menu2_desc, .footer_menu3_desc {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
 .footer_menu2 {
     background-color: #0079c7;
 }
@@ -280,7 +304,6 @@ footer .container {
     flex: 1;
 }
 
-
 footer .widget_title_text {
     color: white;
 }
@@ -292,4 +315,121 @@ footer .widget_title_text {
     margin-top: 30px;
     color: white;
     font-size: 12px;
+}
+
+footer .widget_desc {
+    color: #808080;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+footer .contact {
+    display: flex;
+    margin-top: 20px;
+    color: #808080;
+    line-height: 20px;
+}
+
+footer .address {   
+    flex: 1;
+}
+
+footer .number {
+    flex: 1;
+}
+
+footer .lastest_post_desc {
+    padding-bottom: 20px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+footer p.year {
+    color: #36a9e1;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .lastest_tweets_desc {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.menu_mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+@media (max-width: 600px) {
+    section#banner {
+        background-size: auto;
+    }
+    section div.banner_headline {
+        min-height: 300px;
+    }
+    .banner_headline h1 {
+        font-size: 55px;
+        padding: 20px 20px 0px 20px;
+    }
+    .banner_headline h2 {
+        font-size: 17px;
+        padding: 0px 20px 20px 20px;
+    }
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section {
+        padding: 20px;
+    }
+    #geral aside {
+        padding: 20px;
+    }
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer_copy {
+        padding-left: 20px;
+    }
+    header {
+        flex-direction: row;
+    }
+    nav {
+        flex-direction: column;
+        display: none;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menu_mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .widget_foto_departments {
+        height: 330px;
+    }
 }
