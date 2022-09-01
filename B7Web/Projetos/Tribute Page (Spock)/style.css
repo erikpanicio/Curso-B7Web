@@ -58,7 +58,7 @@ section#sobre img {
 }
 
 section#sobre p {
-    margin: 20px 50px;
+    margin: 20px 20px;
     padding: 10px 25px;
     line-height: 1.5em;
 }
@@ -80,7 +80,7 @@ section#galeria h2{
 }
 
 section#galeria img {
-    width: 350px;
+    width: 25%;
     margin: 30px;
     border: 2px solid white;
 }
@@ -148,6 +148,12 @@ footer p {
     section#sobre img {
         width: 80%;
     }
+    section#sobre p {
+        text-align: justify;
+    }
+    section#galeria img {
+        width: 50%;
+    }
     section#linhadotempo li {
         width: 80%;
     }
@@ -160,12 +166,15 @@ footer p {
     section#sobre img {
         width: 100%;
     }
+    section#galeria img {
+        width: 80%;
+    }
     section#linhadotempo li {
         width: 96%; /* width: 96%; */
         /* font-size: ; */
     }
 }
 
-@media (max-width: 415px) {
-
+@media (max-width: 400px) {
+    
 }
