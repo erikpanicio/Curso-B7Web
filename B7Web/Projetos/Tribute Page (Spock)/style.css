@@ -16,6 +16,7 @@ header {
     background-color: black;
     text-align: center;
     padding: 30px;
+    border: 2px solid black;
 }
 
 a {
@@ -53,8 +54,7 @@ section#sobre h2 {
 }
 
 section#sobre img {
-    height: 486px;
-    width: 650px;
+    width: 45%;
 }
 
 section#sobre p {
@@ -124,6 +124,8 @@ footer {
     background-color: black;
     padding: 20px 0px;
     text-align: center;
+    width: 100%;
+    border: 2px solid black;
 }
 
 footer img {
@@ -134,4 +136,36 @@ footer img {
 
 footer p {
     color: white;
+}
+
+@media (max-width: 1300px) {
+    section#sobre img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 955px) {
+    section#sobre img {
+        width: 80%;
+    }
+    section#linhadotempo li {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    section#sobre, section#galeria, section#linhadotempo, section#links {
+        width: 100%;
+    }
+    section#sobre img {
+        width: 100%;
+    }
+    section#linhadotempo li {
+        width: 96%; /* width: 96%; */
+        /* font-size: ; */
+    }
+}
+
+@media (max-width: 415px) {
+
 }
