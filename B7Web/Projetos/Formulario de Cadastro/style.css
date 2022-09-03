@@ -9,7 +9,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    margin-top: 120px; /* momentâneo */
     background-image: linear-gradient(60deg, purple, orange);
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,20 +18,22 @@ body {
 main {
     background-color: white;
     margin: auto;
-    height: 500px;
-    width: 800px;
+    height: 600px;
+    width: 900px;
     display: flex;
     box-shadow: 1px 1px 50px 20px rgba(0, 0, 0, 0.233);
     border-radius: 20px;
     justify-content: flex-end;
+    margin-top: 50%;
 }
 
-div.login {
+.login {
     background-color: white;
     height: 100%;
-    width: 41%;
+    width: 50%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .login .login_titulo {
@@ -43,7 +44,7 @@ div.login {
 }
 
 .login .login_titulo h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -54,10 +55,11 @@ div.login {
 .login .login_titulo input {
     border-radius: 20px;
     width: 70%;
-    padding: 10px;
+    padding: 13px;
     margin: 10px;
     border: 2px solid white;
     box-shadow: 1px 15px 70px 10px rgba(0, 0, 0, 0.185);
+    font-size: 15px;
 }
 
 .login .login_titulo .botao_criar_conta {
@@ -65,13 +67,16 @@ div.login {
     color: white;
     border: 2px solid #A205EA;
     width: 80%;
-    font-size: 15px;
+    font-size: 20px;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .login .login_titulo .botao_criar_conta:hover {
     background-color: white;
     color: #A205EA;
     transition: color 0.3s;
+    transition: background-color 0.3s;
 }
 
 .mensagem {
@@ -93,14 +98,14 @@ div.login {
 
 .mensagem .bem_vindo h1 {
     color: white;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
     padding: 10px;
 }
 
 .mensagem .bem_vindo p {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 200;
     text-align: justify;
     padding: 0px 50px;
