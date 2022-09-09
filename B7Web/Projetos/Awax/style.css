@@ -67,7 +67,7 @@ header {
     color: lightgray;
 }
 
-.buttom {
+.button {
     display: inline-block;
     background-color: #b28753;
     color: white;
@@ -275,4 +275,50 @@ header {
 
 .section-projects-filters li:hover {
     border-bottom: 3px solid #b28753;
+}
+
+.section-projects-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects-photo {
+    width: 280px;
+}
+
+.section-projects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+
+.section-projects-photoarea:hover .section-projects-photoinfo {
+    display: flex;
+}
+
+.section-projects-photoarea img {
+    width: inherit; /* herda o valor do item anterior */
+    height: inherit;
+}
+
+.section-projects-photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.493);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.section-projects-photoinfo h5 {
+    font-size: 20px;
+    font-weight: 600;
 }
