@@ -67,6 +67,18 @@ header {
     color: lightgray;
 }
 
+.buttom {
+    display: inline-block;
+    background-color: #b28753;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
 .banner {
     background-color: rgb(75, 75, 75); /* enquanto a imagem não carregar */
     background-image: url("images/complementos/bg.jpg");
@@ -117,17 +129,6 @@ header {
     margin-top: 10px;
 }
 
-.banner .slide a {
-    background-color: #b28753;
-    color: white;
-    text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 20px;
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 13px;
-}
-
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -153,7 +154,7 @@ header {
 }
 
 .default {
-    padding: 50px 0px;
+    padding: 50px 30px;
 }
 
 .default .section-title, .default .section-desc {
@@ -168,7 +169,7 @@ header {
 
 .default .section-desc {
     font-size: 13px;
-    color: #D4D4D4;
+    color: #9c9c9c;
     margin-top: 10px;
     margin-bottom: 40px;
 }
@@ -182,7 +183,7 @@ header {
     background-color: white;
 }
 
-.default.white .section-title {
+.default.white .section-title, .default.white .section-body {
     color: black;
 }
 
@@ -190,7 +191,88 @@ header {
     background-color: black;
 }
 
-.default.dark .section-title {
+.default.dark .section-title, .default.dark .section-body {
     color: white;
 }
 
+/* CSS de áreas específicas */
+
+.section-abouthus {
+    display: flex;
+}
+
+.section-abouthus-left {
+    flex: 1;    
+}
+
+.section-abouthus-left p {
+    text-align: justify;
+    line-height: 25px;
+    width: 650px;
+}
+
+.section-abouthus-right {
+    width: 450px;
+}
+
+.section-abouthus-right img {
+    width: 100%; /* 480px */
+    box-shadow: 0px 5px 20px 5px rgba(0, 0, 0, 0.427);
+}
+
+.section-services {
+    display: flex;
+}
+
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #383838;
+    padding: 30px;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #383838;
+}
+
+.section-service h4 {
+    margin-top: 30px;
+}
+
+.section-service p {
+    color: #686868;
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 25px;
+}
+
+.section-projects {
+    display: flex;
+    justify-content: center;   
+}
+
+.section-projects-filters {
+    display: inline-block;
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px;
+    padding: 0px 15px;
+}
+
+.section-projects-filters li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    border: 3px solid transparent;
+    border-left: 1px solid #CCCCCC;
+    cursor: pointer;
+    color: #4d4d4d;
+}
+
+.section-projects-filters li:first-child {
+    border: 0;
+}
+
+.section-projects-filters li:hover {
+    border-bottom: 3px solid #b28753;
+}
