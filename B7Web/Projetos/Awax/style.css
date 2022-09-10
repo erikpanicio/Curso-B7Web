@@ -360,6 +360,40 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: black;
+    padding: 30px;
+}
+
+.section-team-avatar {
+    width: 150px;
+    height: auto;
+}
+
+.section-team-name {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.section-team-role {
+    font-size: 12px;
+    color: #383838;
+    margin-top: 5px;
+}
+
+.section-team-social a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #CCCCCC;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.section-team-social a:hover {
+    background-color: #b28753;
 }
 
 .section-team-area .sliders-pointers {
