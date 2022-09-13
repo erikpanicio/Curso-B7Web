@@ -3,111 +3,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
 
 * {
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(60deg, purple, orange);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+    height: 100vh; /* 98.3 */
+    font-family: 'Poppins', sans-serif;
 }
 
-main {
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 98.3 */
+}
+
+.fundo {
     background-color: white;
-    margin: auto;
     height: 600px;
     width: 900px;
     display: flex;
-    box-shadow: 1px 1px 50px 20px rgba(0, 0, 0, 0.233);
-    border-radius: 20px;
-    justify-content: flex-end;
-    margin-top: 50%;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 1px 50px 15px rgba(0, 0, 0, 0.233);
 }
 
-.login {
-    background-color: white;
+.esquerda {
+    /* background-color: white; */
     height: 100%;
     width: 50%;
+}
+
+.esquerda-conteudo {
+    height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.login .login_titulo {
-    color: #8507c0;
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 60px; /* momentâneo */
-}
-
-.login .login_titulo h1 {
+.esquerda-conteudo h1 {
     font-size: 30px;
-    margin-bottom: 10px;
-}
-
-.login .login_titulo form {
     text-align: center;
+    color: #8507c0;
 }
 
-.login .login_titulo input {
-    border-radius: 20px;
-    width: 70%;
+.esquerda-conteudo input {
     padding: 13px;
-    margin: 10px;
-    border: 2px solid white;
-    box-shadow: 1px 15px 70px 10px rgba(0, 0, 0, 0.185);
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 1px 15px 70px 10px rgb(0 0 0 / 19%);
     font-size: 15px;
+    margin-top: 20px;
 }
 
-.login .login_titulo .botao_criar_conta {
+.esquerda-conteudo .botao {
+    width: 100%;
     background-color: #A205EA;
     color: white;
+    font-size: 23px;
     border: 2px solid #A205EA;
-    width: 80%;
-    font-size: 20px;
-    transition: color 0.3s;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
-.login .login_titulo .botao_criar_conta:hover {
+.esquerda-conteudo .botao:hover {
     background-color: white;
     color: #A205EA;
-    transition: color 0.3s;
-    transition: background-color 0.3s;
+    border: 2px solid #A205EA;
+    transition: all 0.3s;
 }
 
-.mensagem {
-    background-image: linear-gradient(50deg,#EB43FE, #A205EA);
+.direita {
+    background-image: linear-gradient(to top, #EB43FE, #A205EA); /* rgb(180, 3, 180), rgb(153, 5, 153 */
     height: 100%;
     width: 50%;
-    display: flex;
-    /* flex-direction: column; */
     border-radius: 20px;
 }
 
-.mensagem .bem_vindo {
+.direita-conteudo {
+    height: 100%;
     display: flex;
-    width: 100%;
+    color: white;
+    align-items: center;
     flex-direction: column;
-    align-items: center; /* text align center */
-    align-self: center;
 }
 
-.mensagem .bem_vindo h1 {
-    color: white;
+.direita-conteudo h1 {
     font-size: 45px;
-    font-weight: 700;
-    padding: 10px;
+    margin-top: 28%; /* não usei justify porque queria os dois h1 alinhados */
 }
 
-.mensagem .bem_vindo p {
-    color: white;
+.direita-conteudo p {
+    width: 85%;
     font-size: 20px;
-    font-weight: 200;
     text-align: justify;
-    padding: 0px 50px;
-    margin-bottom: 80px; /* momentâneo */
 }
+
+@media (max-width: 930px) {
+    .fundo {
+        margin: 0px 20px
+    }
+    .direita-conteudo h1 {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 850px) {
+    .direita-conteudo h1 {
+        margin-top: 33%;
+    }
+}
+
+@media (max-width: 740px) { /* talvez seja melhor usar % nos itens (font...) */
+    .fundo {
+        height: 60%; /* height: 65%; width: 100%; */
+        width: 100%;
+    }
+    .esquerda-conteudo h1 {
+        font-size: 25px;
+    }
+    .esquerda-conteudo input {
+        padding: 10px;
+    }
+    .esquerda-conteudo .botao {
+        font-size: 18px;
+    }
+    .direita-conteudo h1 {
+        font-size: 38px;
+        margin-top: 38%;
+    }
+    .direita-conteudo p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 610px) { /* mudar o layout */
+    .esquerda {
+        width: 100%;
+    }
+    .fundo {
+        border-radius: 0px;
+        width: 75%;
+    }
+    .direita {
+        display: none;
+    }
+}
+
+@media (max-width: 365px) {
+    .esquerda-conteudo h1 {
+        font-size: 8vw;
+    }
+    .esquerda-conteudo input {
+        /* padding: 3vw; */
+        font-size: 4vw;
+    }
+}
+
+/* tentar usar o minímo possível de media query, tentar deixar tudo mais responsivo usando pocentagens!!! */
