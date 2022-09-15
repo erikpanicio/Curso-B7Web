@@ -52,19 +52,25 @@ body {
 .esquerda-conteudo h1 {
     font-size: 3rem; /* font-size: 30px; */
     line-height: 4rem;
-    padding: 20px;
+    padding: 0px 20px;
     text-align: center;
     color: #8507c0;
 }
 
+.esquerda-conteudo form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .esquerda-conteudo input {
-    width: 90%; /* teste */
+    width: 80%; /* teste */
     padding: 0.8rem; /* 10px */
     border: 1px solid white;
     border-radius: 1.6rem; /* 20px */
     box-shadow: 1px 15px 70px 10px rgb(0 0 0 / 19%);
     font-size: 1.25rem; /* 18px */
-    margin-top: 1.6rem; /* 20px */
+    margin-top: 1.2rem; /* 20px */
 }
 
 .esquerda-conteudo .botao {
@@ -100,7 +106,7 @@ body {
 
 .direita-conteudo h1 {
     font-size: 2.8rem;
-    margin-top: 6.5rem; /* 28% */
+    margin-top: 5.8rem; /* 28% */
 }
 
 .direita-conteudo p {
