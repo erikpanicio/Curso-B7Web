@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
@@ -5,6 +6,10 @@
 * {
     padding: 0px;
     margin: 0px;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
@@ -17,16 +22,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* 98.3 */
+    height: 100vh;
 }
 
 .fundo {
     background-color: white;
-    height: 37.5rem; /* height: 600px; */
-    width: 50%; /* width: 900px; */ /* width: 56.25rem; */
+    height: 37.5rem;
+    width: 56.25rem;
     display: flex;
     border-radius: 0px 20px 20px 0px;
     box-shadow: 1px 1px 50px 15px rgba(0, 0, 0, 0.233);
+    margin: 20px;
 }
 
 .esquerda {
@@ -44,7 +50,7 @@ body {
 }
 
 .esquerda-conteudo h1 {
-    font-size: 3vw; /* font-size: 30px; */
+    font-size: 3rem; /* font-size: 30px; */
     line-height: 50px;
     padding: 20px;
     text-align: center;
@@ -52,27 +58,27 @@ body {
 }
 
 .esquerda-conteudo input {
-    padding: 13px;
+    padding: 0.8rem;
     border: 1px solid white;
-    border-radius: 20px;
+    border-radius: 1.6rem; /* 20px */
     box-shadow: 1px 15px 70px 10px rgb(0 0 0 / 19%);
-    font-size: 15px;
-    margin-top: 20px;
+    font-size: 1.5rem; /* 18px */
+    margin-top: 1.6rem; /* 20px */
 }
 
 .esquerda-conteudo .botao {
     width: 100%;
     background-color: #A205EA;
     color: white;
-    font-size: 23px;
-    border: 2px solid #A205EA;
+    font-size: 1.5rem;
+    border: 0.16rem solid #A205EA;
     transition: all 0.3s;
 }
 
 .esquerda-conteudo .botao:hover {
     background-color: white;
     color: #A205EA;
-    border: 2px solid #A205EA;
+    border: 0.16rem solid #A205EA;
     transition: all 0.3s;
 }
 
@@ -92,42 +98,40 @@ body {
 }
 
 .direita-conteudo h1 {
-    font-size: 45px;
-    margin-top: 28%; /* não usei justify porque queria os dois h1 alinhados */
+    font-size: 2.8rem;
+    margin-top: 6.5rem; /* 28% */
 }
 
 .direita-conteudo p {
     width: 85%;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: justify;
+}
+
+@media (min-width: 2000px) {
+    html {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    html {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 610px) { /* mudar o layout */
     .fundo {
         border-radius: 0px;
-        width: 25rem;
-        height: 25.5rem;
+        width: 75%;
     }
     .esquerda {
-        width: 56.25rem;
+        width: 100%;
     }
     .esquerda-conteudo h1 {
-        font-size: 40px;
+        font-size: 3rem;
     }
     .direita {
         display: none;
     }
 }
-
-/* @media (max-width: 365px) {
-    .esquerda-conteudo h1 {
-        font-size: 8vw;
-    }
-    .esquerda-conteudo input {
-        font-size: 4vw;
-    }
-} */
-
-/* tentar usar o minímo possível de media query, tentar deixar tudo mais responsivo usando pocentagens!!! */
-/* aumentar o tamanho dos botões */
-/* verificar o pixel 725 */
