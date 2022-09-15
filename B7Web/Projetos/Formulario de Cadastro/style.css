@@ -149,17 +149,13 @@ body {
 @media (max-width: 610px) { /* mudar o layout */
     .fundo {
         border-radius: 0px;
-        width: 75%;
+        width: 25rem;
     }
     .esquerda {
-        width: 100%;
+        width: 56.25rem;
     }
     .esquerda-conteudo h1 {
         font-size: 40px;
-    }
-    .fundo {
-        border-radius: 0px;
-        width: 75%;
     }
     .direita {
         display: none;
