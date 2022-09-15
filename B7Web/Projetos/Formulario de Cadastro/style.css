@@ -23,7 +23,7 @@ body {
 .fundo {
     background-color: white;
     height: 37.5rem; /* height: 600px; */
-    width: 56.25rem; /* width: 900px; */
+    width: 50%; /* width: 900px; */ /* width: 56.25rem; */
     display: flex;
     border-radius: 0px 20px 20px 0px;
     box-shadow: 1px 1px 50px 15px rgba(0, 0, 0, 0.233);
@@ -100,50 +100,6 @@ body {
     width: 85%;
     font-size: 20px;
     text-align: justify;
-}
-
-@media (max-width: 1250px) {
-    .esquerda-conteudo h1 {
-        font-size: 4.5vw;
-    }
-}
-
-@media (max-width: 930px) {
-    .fundo {
-        margin: 0px 20px
-    }
-    .direita-conteudo h1 {
-        margin-top: 30%;
-    }
-}
-
-@media (max-width: 850px) {
-    .esquerda-conteudo h1 {
-        font-size: 6vw;
-    }
-    .direita-conteudo h1 {
-        margin-top: 33%;
-    }
-}
-
-@media (max-width: 740px) { /* talvez seja melhor usar % nos itens (font...) */
-    .fundo {
-        height: 60%; /* height: 65%; width: 100%; */
-        width: 100%;
-    }
-    .esquerda-conteudo input {
-        padding: 10px;
-    }
-    .esquerda-conteudo .botao {
-        font-size: 18px;
-    }
-    .direita-conteudo h1 {
-        font-size: 38px;
-        margin-top: 38%;
-    }
-    .direita-conteudo p {
-        font-size: 15px;
-    }
 }
 
 @media (max-width: 610px) { /* mudar o layout */
