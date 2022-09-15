@@ -30,7 +30,7 @@ body {
     height: 37.5rem;
     width: 56.25rem;
     display: flex;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px;
     box-shadow: 1px 1px 50px 15px rgba(0, 0, 0, 0.233);
     margin: 20px;
 }
@@ -51,7 +51,7 @@ body {
 
 .esquerda-conteudo h1 {
     font-size: 3rem; /* font-size: 30px; */
-    line-height: 50px;
+    line-height: 4rem;
     padding: 20px;
     text-align: center;
     color: #8507c0;
@@ -62,7 +62,7 @@ body {
     border: 1px solid white;
     border-radius: 1.6rem; /* 20px */
     box-shadow: 1px 15px 70px 10px rgb(0 0 0 / 19%);
-    font-size: 1.5rem; /* 18px */
+    font-size: 1.25rem; /* 18px */
     margin-top: 1.6rem; /* 20px */
 }
 
