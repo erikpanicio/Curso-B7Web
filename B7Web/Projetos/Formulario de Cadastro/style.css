@@ -149,15 +149,18 @@ body {
     html {
         font-size: 14px;
     }
+    .fundo {
+        height: 85%;
+    }
 }
 
-@media (max-height: 435px) {
+@media (max-height: 460px) {
     html {
         font-size: 12px;
     }
 }
 
-@media (max-height: 350px) {
+@media (max-height: 390px) {
     html {
         font-size: 10px;
     }
