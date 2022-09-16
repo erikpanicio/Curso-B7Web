@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
@@ -14,8 +13,8 @@ html {
 
 body {
     background-image: linear-gradient(60deg, purple, orange);
-    background-size: cover;
-    height: 100%; /* 98.3 */
+    background-repeat: no-repeat;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -23,11 +22,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* height: 93vh; */
 }
 
 .fundo {
     background-color: white;
+    /* height: 80%;
+    width: 50%; */
     height: 37.5rem;
     width: 56.25rem;
     display: flex;
@@ -116,15 +117,25 @@ body {
     text-align: justify;
 }
 
-@media (min-width: 2000px) {
+/* @media (orientation: landscape) {
     html {
-        font-size: 35px;
+        font-size: 12px;
     }
-}
+} */
+
+
 
 @media (max-width: 740px) {
     html {
         font-size: 14px;
+    }
+}
+
+/* Max-width */
+
+@media (min-width: 2000px) {
+    html {
+        font-size: 35px;
     }
 }
 
@@ -134,7 +145,37 @@ body {
     }
     .esquerda-conteudo h1 {
         font-size: 3rem;
-        padding: 0px;
+        padding: 5px;
+    }
+    .direita {
+        display: none;
+    }
+}
+
+/* Max-height */
+
+@media (max-height: 635px) {
+    html {
+        font-size: 14px;
+    }
+    .fundo {
+        height: 90%;
+    }
+}
+
+@media (max-height: 435px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-height: 350px) {
+    .esquerda {
+        width: 100%;
+    }
+    .esquerda-conteudo h1 {
+        font-size: 3rem;
+        padding: 5px;
     }
     .direita {
         display: none;
