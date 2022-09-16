@@ -127,16 +127,13 @@ body {
     }
 }
 
-@media (max-width: 610px) { /* mudar o layout */
-    .fundo {
-        border-radius: 20px;
-        width: 100%;
-    }
+@media (max-width: 610px) {
     .esquerda {
         width: 100%;
     }
     .esquerda-conteudo h1 {
         font-size: 3rem;
+        padding: 0px;
     }
     .direita {
         display: none;
