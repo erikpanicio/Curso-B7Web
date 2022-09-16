@@ -149,9 +149,6 @@ body {
     html {
         font-size: 14px;
     }
-    .fundo {
-        height: 90%;
-    }
 }
 
 @media (max-height: 435px) {
