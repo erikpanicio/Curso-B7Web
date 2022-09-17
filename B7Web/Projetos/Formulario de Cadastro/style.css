@@ -181,12 +181,12 @@ body {
         font-size: 3rem;
         padding: 0px;
     }
-    .esquerda-conteudo input {
+    /* .esquerda-conteudo input {
         width: 130%;
     }
     .esquerda-conteudo .botao {
         width: 140%;
-    }
+    } */
     .direita {
         display: none;
     }
