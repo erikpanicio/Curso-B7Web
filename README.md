@@ -1,6 +1,6 @@
 # Projetos
 
-### MediCenter
+### MediCenter (não responsivo)
 https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter/
 
 ### Tribute page
