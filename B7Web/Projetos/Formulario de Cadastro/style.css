@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* height: 93vh; */
+    height: 100vh;
 }
 
 .fundo {
@@ -180,6 +180,12 @@ body {
     .esquerda-conteudo h1 {
         font-size: 3rem;
         padding: 0px;
+    }
+    .esquerda-conteudo input {
+        width: 130%;
+    }
+    .esquerda-conteudo .botao {
+        width: 140%;
     }
     .direita {
         display: none;
