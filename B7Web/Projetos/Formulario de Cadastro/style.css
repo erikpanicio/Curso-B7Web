@@ -166,13 +166,13 @@ body {
 
 @media (max-height: 460px) {
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
-@media (max-height: 390px) {
+@media (max-height: 400px) {
     html {
-        font-size: 10px;
+        font-size: 12px;
     }
     .esquerda {
         width: 100%;
