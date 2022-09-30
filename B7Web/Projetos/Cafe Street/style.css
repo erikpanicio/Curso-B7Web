@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* --cor1: #FF902A;
+    --cor2: #2F2105;
+    --cor3: #F9D9AA;
+    --cor4: #F7EBDA; */
+
+    --cor1: #FF902A;
+    --cor2: #db7c22;
+    --cor3: #2F2105;
+    --cor4: #5e430d;
+    --cor5: #F9D9AA;
+    --cor6: #F7EBDA;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+}
+
+.background {
+    background-image: url("images/background1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    height: inherit;
+    width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img.logo {
+    height: 25%;
+}
+
+.container ul {
+    list-style: none;
+    display: flex;
+}
+
+.container a {
+    color: black;
+    margin: 0px 20px;
+    font-size: 23px;
+}
+
+.container a:hover {
+    color: var(--cor1);
+}
+
+.right-side input { /* ver se está certo colocar a imagem desse jeito | pesquisar "imagem dentro do input" | */
+    padding: 15px 0px 15px 40px;
+    border-radius: 30px;
+    background-image: url("images/search.svg");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.356);
+    
+}
+
+.right-side input::placeholder {
+    font-size: 15px;
+}
+
+.right-side img {
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.contents {
+    width: 1500px;
+}
+
+.apresentation {
+    margin-top: 130px;
+}
+
+.apresentation h2 {
+    width: 650px;
+    font-size: 65px;
+    color: var(--cor3);
+    font-weight: 600;
+}
+
+.apresentation span {
+    color: var(--cor1);
+}
+
+.apresentation p {
+    width: 550px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: gray;
+}
+
+.order-apresentation {
+    width: 550px;
+}
+
+.order-apresentation button {
+    background-color: var(--cor3);
+    background-image: url("images/cart2.svg");
+    background-repeat: no-repeat;
+    background-position: 150px center; 
+    background-size: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    padding: 15px 65px 15px 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.order-apresentation button:hover {
+    background-color: var(--cor4);
+    cursor: pointer;
+}
+
+.order-apresentation a {
+    color: var(--cor1);
+    font-weight: 700;
+    margin-left: 60px;
+}
+
+.order-apresentation a:hover {
+    color: var(--cor2);
+}
+
+section .section-popular-now {
+    margin-top: 150px;
+    height: 100vh; /* tirar */
+}
+
+section .section-popular-now h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+section .section-popular-now h2 span{
+    border-bottom: 5px solid var(--cor1);
+}
+
+.box-grid-cafe {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.grid-cafe {
+    width: 1400px;
+    display: flex;
+    box-shadow: 0px 180px 0px 80px var(--cor5);
+    border-radius: 10px;
+}
+
+.cafe {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    flex: 1;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cafe:last-child {
+    margin: 0;
+}
+
+.cafe-contents {
+    height: 90%;
+    width: 90%;
+}
+
+.cafe-photo {
+    height: 275.4px;
+    width: 371.4px;
+}
+
+.cafe-photo img {
+    width: 375px;
+    border-radius: 10px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    top: -270px; /* top: 1040px; */ /* top: 109vh */
+    left: 15px; /* left: 290px; */ /* left: 7vw; */
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--cor3);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rating img {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+/* Grid */
+
+.cafe-desc {
+    height: 83px; /* height: 22%; */
+    display: grid;
+    
+    grid-template-areas: 
+    "item1 item1 item1 item2 item2"
+    "item3 item4 item4 item5 item5"
+    ;
+    padding: 10px;
+    align-items: center;
+    font-weight: 600;
+}
+
+.cafe-name.item1 {
+    grid-area: item1;
+    font-size: 30px;
+    color: var(--cor3);
+}
+
+.cafe-views.item2 {
+    grid-area: item2;
+    font-size: 30px;
+    color: var(--cor3);
+    font-weight: bold;
+    text-align: center;
+}
+
+.cafe-type1.item3 {
+    grid-area: item3;
+    font-size: 20px;
+    color: #ff912aaf;
+}
+
+.cafe-type1.item3 span {
+    border: 3px solid #ff912aaf;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 15px;
+}
+
+.cafe-type1.item3 span:hover {
+    border: 3px solid var(--cor1);
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+.cafe-type2.item4 {
+    grid-area: item4;
+    font-size: 20px;
+    color: var(--cor1);
+    color: #ff912aaf;
+}
+
+.cafe-type2.item4 span {
+    border: 3px solid #ff912aaf;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 15px;
+}
+
+.cafe-type2.item4 span:hover {
+    border: 3px solid var(--cor1);
+    color: var(--cor1);
+    cursor: pointer;
+}
+
+.cafe-cart.item5 {
+    display: grid;
+    justify-content: center;
+    grid-area: item5;
+}
+
+.cafe-cart.item5 img {
+    height: 50px;
+    width: 50px;
+}
+
+/* talvez devo fazer com flex para que o Hot e o Cold fiquem bem alinhado com a borda (e para que tudo fique alinha exatamento como no exemplo) */
