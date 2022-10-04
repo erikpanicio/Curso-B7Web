@@ -1,13 +1,9 @@
+
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    /* --cor1: #FF902A;
-    --cor2: #2F2105;
-    --cor3: #F9D9AA;
-    --cor4: #F7EBDA; */
-
     --cor1: #FF902A;
     --cor2: #db7c22;
     --cor3: #2F2105;
@@ -89,7 +85,7 @@ header {
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 1000px; /* height: 100vh;  */
     display: flex;
     justify-content: center;
 }
@@ -98,9 +94,22 @@ main {
     width: 1500px;
 }
 
-.apresentation {
-    margin-top: 130px;
+.contents h2 {
+    font-size: 45px;
+    font-weight: 600;
 }
+
+.contents h2 span{
+    border-bottom: 5px solid var(--cor1);
+}
+
+.space { /* espaço que todos os sections vão ter um do outro */
+    margin-top: 150px;
+}
+
+/* .apresentation {
+    margin-top: 130px;
+} */ 
 
 .apresentation h2 {
     width: 650px;
@@ -109,8 +118,9 @@ main {
     font-weight: 600;
 }
 
-.apresentation span {
+.apresentation strong {
     color: var(--cor1);
+    font-weight: inherit;
 }
 
 .apresentation p {
@@ -153,31 +163,21 @@ main {
     color: var(--cor2);
 }
 
-section .section-popular-now {
-    margin-top: 150px;
-    height: 100vh; /* tirar */
-}
-
-section .section-popular-now h2 {
-    font-size: 45px;
-    font-weight: 600;
-}
-
-section .section-popular-now h2 span{
-    border-bottom: 5px solid var(--cor1);
-}
-
 .box-grid-cafe {
     display: flex;
     justify-content: center;
     margin-top: 60px;
+
+    /* fundo popular now, se der problemas tirar */
+    background-color: var(--cor5); 
+    border-radius: 30px;
+    padding: 50px 30px;
 }
 
 .grid-cafe {
     width: 1400px;
     display: flex;
-    box-shadow: 0px 180px 0px 80px var(--cor5);
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .cafe {
@@ -203,11 +203,12 @@ section .section-popular-now h2 span{
 
 .cafe-photo {
     height: 275.4px;
-    width: 371.4px;
+    width: 100%;
 }
 
 .cafe-photo img {
-    width: 375px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -311,4 +312,347 @@ section .section-popular-now h2 span{
     width: 50px;
 }
 
+.howto {
+}
+
+.howto-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
+.howto-contents {
+    
+}
+
+.howto-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.howto-photo img {
+    height: 200px;
+    width: 200px;
+}
+
+.howto-desc {
+    text-align: center;
+}
+
+.howto-desc .up{
+    color: var(--cor3);
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.howto-desc .down{
+    font-size: 23px;
+    font-weight: 400;
+    padding: 8px;
+}
+
+.aboutus {
+    display: flex;
+    margin-top: 300px;
+}
+
+.background-abouthus {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-image: url("images/background2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus-photo {
+    height: 100%;
+    width: 450px;       
+}
+
+.aboutus-photo img {
+    height: inherit;
+    width: inherit;
+    position: relative;
+    bottom: 130px;
+    border: 10px solid white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.200);
+}
+
+.aboutus-contents {
+    width: 500px;
+}
+
+.aboutus-contents h2 {
+    margin-top: 80px;
+}
+
+.aboutus-contents p.up {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.aboutus-contents p.down {
+    margin-top: 30px;
+    font-size: 20px;
+    color: gray;
+}
+
+.aboutus-contents button {
+    background-color: var(--cor3);
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffb42a;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.specialmenu-grids {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.specialmenu-grid {
+    margin: 30px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.specialmenu-contents {
+}
+
+.specialmenu-photo img {
+    border-radius: 10px;
+    width: 400px;
+    height: 294px;
+}
+
+.rating2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    top: -290px;
+    left: 15px;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--cor3);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.rating2 img {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+}
+
+
+.specialmenu-desc {
+   display: grid;
+   grid-template-areas: 
+   "item1 item2"
+   "item3 item4"
+   ;
+   margin-top: -30px;
+}
+
+
+.specialmenu-cafe-name.item1 {
+    grid-area: item1;
+    font-size: 30px;
+    color: var(--cor3);
+    font-weight: 600;
+}
+.specialmenu-cafe-views.item2 {
+    grid-area: item2;
+    font-size: 30px;
+    color: var(--cor3);
+    font-weight: bold;
+    text-align: center;
+}
+.specialmenu-cafe-desc.item3 {
+    grid-area: item3;
+    color: gray;
+    font-weight: 600;
+    width: 80%;
+}
+.specialmenu-cafe-cart.item4 {
+    grid-area: item4;
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.clients-comments {
+    height: 600px;
+    /* width: 85%; */
+    background-image: url("images/background2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px; 
+}
+
+.clients-comments-contents {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row;
+    flex: 1; */
+}
+
+.clients-comments-text {
+    margin-left: 200px;
+}
+
+.clients-comments-clients {
+    display: flex;
+    height: 370px;
+}
+
+.clients-comments-clients-box {
+    /* width: 250px; */
+    height: 350px;
+    margin-left: 100px;
+}
+
+.clients-box-photo {
+    height: inherit;
+    border: 8px solid var(--cor5);
+}
+
+.clients-box-photo img {
+    width: inherit;
+    height: inherit;
+}
+
+.clients-box-review {
+    width: 100%;
+    height: 30%;
+    position: relative;
+    top: -150px;
+    left: 50px;
+    background-color: #FAC97F;
+    box-shadow: 0px 0px 0px 10px #fac97f9f;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.clients-box-review strong {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--cor3);
+}
+
+.clients-box-review p {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--cor3);
+}
+
+footer {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .background-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("images/footer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+footer p {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+form {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form input[type=email] {
+    
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+form input[type=submit]{
+    width: 25%;
+    background-color: var(--cor3);
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: -63.5px;
+    left: 73%;
+}
+
+/* 
+
+.background-footer p {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+    padding: 20px;
+}
+
+.background-footer input[type=email] {
+    width: 40%;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+}
+
+.background-footer input[type=submit]{
+    background-color: var(--cor3);
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: -63.5px;
+    left: 220px;
+}
+
+*/
+
 /* talvez devo fazer com flex para que o Hot e o Cold fiquem bem alinhado com a borda (e para que tudo fique alinha exatamento como no exemplo) */
+
+/* tudo está alinhado pelo content que tem 1500px, talvez para deixar a imagem na largura toda, eu tenha que definir cada section com o width de 1500px e quando não quiser, posso tirar */
+
+/* colocar um google maps no final */
