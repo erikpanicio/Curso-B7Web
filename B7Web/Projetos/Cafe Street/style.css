@@ -27,7 +27,7 @@ body {
 .background {
     background-image: url("images/background1.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 header {
@@ -83,15 +83,16 @@ header {
     vertical-align: middle;
 }
 
-main {
+.main {
     width: 100%;
-    height: 1000px; /* height: 100vh;  */
+    height: 100%; /* height: 100vh;  */
     display: flex;
     justify-content: center;
 }
 
 .contents {
     width: 1500px;
+    margin-top: 150px;
 }
 
 .contents h2 {
@@ -102,14 +103,6 @@ main {
 .contents h2 span{
     border-bottom: 5px solid var(--cor1);
 }
-
-.space { /* espaço que todos os sections vão ter um do outro */
-    margin-top: 150px;
-}
-
-/* .apresentation {
-    margin-top: 130px;
-} */ 
 
 .apresentation h2 {
     width: 650px;
@@ -355,19 +348,20 @@ main {
 .aboutus {
     display: flex;
     margin-top: 300px;
-}
-
-.background-abouthus {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
     background-image: url("images/background2.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+}
+
+.background-abouthus {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    
 }
 
 .aboutus-photo {
-    height: 100%;
     width: 450px;       
 }
 
@@ -387,11 +381,17 @@ main {
 
 .aboutus-contents h2 {
     margin-top: 80px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.aboutus-contents span {
+    border-bottom: 5px solid var(--cor1);
 }
 
 .aboutus-contents p.up {
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -399,6 +399,7 @@ main {
     margin-top: 30px;
     font-size: 20px;
     color: gray;
+    text-align: justify;
 }
 
 .aboutus-contents button {
@@ -410,6 +411,10 @@ main {
     color: #ffb42a;
     cursor: pointer;
     margin-top: 30px;
+}
+
+.aboutus-contents button:hover {
+    background-color: #5e430d;  
 }
 
 .specialmenu-grids {
@@ -495,8 +500,9 @@ main {
 }
 
 .clients-comments {
+    margin-top: 150px;
     height: 600px;
-    /* width: 85%; */
+    width: 100%;
     background-image: url("images/background2.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -513,7 +519,23 @@ main {
 }
 
 .clients-comments-text {
-    margin-left: 200px;
+    width: 35%;
+    margin-left: 160px;
+    /* margin-right: 100px */;
+    /* margin: auto */
+}
+
+.clients-comments-text h2 {
+    font-size: 45px;
+    font-weight: 600;
+    
+}
+
+.clients-comments-text p {
+    font-size: 23px;
+    color: gray;
+    margin-top: 20px;
+    width: 60%;
 }
 
 .clients-comments-clients {
@@ -522,23 +544,30 @@ main {
 }
 
 .clients-comments-clients-box {
-    /* width: 250px; */
-    height: 350px;
-    margin-left: 100px;
+    margin-right: 80px;
+    width: 100%;
+}
+
+.clients-comments-clients-box:last-child {
+    margin-right: 0px;   
 }
 
 .clients-box-photo {
-    height: inherit;
-    border: 8px solid var(--cor5);
+    height: 93%;
 }
 
 .clients-box-photo img {
-    width: inherit;
-    height: inherit;
+    /* width: inherit;
+    height: inherit; */
+    /* width: 215px; */
+    width: 265px;
+    height: 100%; /* height: 280px; */
+    border: 8px solid var(--cor5);
 }
 
 .clients-box-review {
-    width: 100%;
+    /* width: 70%; */
+    width: 250px;
     height: 30%;
     position: relative;
     top: -150px;
@@ -546,7 +575,7 @@ main {
     background-color: #FAC97F;
     box-shadow: 0px 0px 0px 10px #fac97f9f;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px 10px;
 }
 
 .clients-box-review strong {
@@ -618,40 +647,12 @@ form input[type=submit]{
     left: 73%;
 }
 
-/* 
 
-.background-footer p {
-    color: white;
-    font-size: 45px;
-    font-weight: 600;
-    padding: 20px;
-}
 
-.background-footer input[type=email] {
-    width: 40%;
-    padding: 20px;
-    border-radius: 30px;
-    font-size: 20px;
-    color: black;
-    font-weight: 600;
-}
 
-.background-footer input[type=submit]{
-    background-color: var(--cor3);
-    padding: 15px 40px;
-    border-radius: 30px;
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-    position: relative;
-    top: -63.5px;
-    left: 220px;
-}
+/* fazer o menu ter utilidade */
 
-*/
-
-/* talvez devo fazer com flex para que o Hot e o Cold fiquem bem alinhado com a borda (e para que tudo fique alinha exatamento como no exemplo) */
+/* Popular now mais para baixo */
 
 /* tudo está alinhado pelo content que tem 1500px, talvez para deixar a imagem na largura toda, eu tenha que definir cada section com o width de 1500px e quando não quiser, posso tirar */
 
