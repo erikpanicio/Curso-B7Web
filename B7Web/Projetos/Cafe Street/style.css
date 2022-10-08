@@ -1,4 +1,3 @@
-
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -21,13 +20,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    font-size: 20px;
+}
+
 body {
 }
 
 .background {
     background-image: url("images/background1.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: right top;
 }
 
 header {
@@ -92,7 +96,7 @@ header {
 
 .contents {
     width: 1500px;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 .contents h2 {
@@ -104,11 +108,16 @@ header {
     border-bottom: 5px solid var(--cor1);
 }
 
+.contents.margin {
+    margin-top: 110px;
+}
+
 .apresentation h2 {
     width: 650px;
     font-size: 65px;
     color: var(--cor3);
     font-weight: 600;
+    text-shadow: 1px 1px 2px white;
 }
 
 .apresentation strong {
@@ -121,6 +130,7 @@ header {
     margin-top: 30px;
     font-size: 25px;
     color: gray;
+    
 }
 
 .order-apresentation {
@@ -156,10 +166,29 @@ header {
     color: var(--cor2);
 }
 
+.section-popular-now {
+    position: relative;
+    top: 170px; /* top: 180px */
+}
+
+/* Título com linha laranja em baixo */
+
+.section-popular-now h2 {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.section-popular-now h2 span{
+    border-bottom: 5px solid var(--cor1);
+}
+
+
 .box-grid-cafe {
+    max-width: 90%;
     display: flex;
     justify-content: center;
     margin-top: 60px;
+    
 
     /* fundo popular now, se der problemas tirar */
     background-color: var(--cor5); 
@@ -358,7 +387,6 @@ header {
     width: 75%;
     display: flex;
     justify-content: space-around;
-    
 }
 
 .aboutus-photo {
@@ -427,41 +455,41 @@ header {
 .specialmenu-grid {
     margin: 30px;
     box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 1rem;
     border-radius: 10px;
-    width: 400px;
+    width: 20rem;
 }
 
 .specialmenu-contents {
+    
 }
 
 .specialmenu-photo img {
     border-radius: 10px;
-    width: 400px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
 }
 
 .rating2 {
     display: flex;
     align-items: center;
     position: relative;
-    width: 50px;
-    top: -290px;
+    width: 2.5rem;
+    top: -14.5rem;
     left: 15px;
     background-color: white;
-    padding: 5px 15px;
+    padding: 0.25rem 0.75rem;
     border-radius: 20px;
     color: var(--cor3);
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 700;
 }
 
 .rating2 img {
-    height: 20px;
-    width: 20px;
+    height: 1rem;
+    width: 1rem;
     margin-left: 5px;
 }
-
 
 .specialmenu-desc {
    display: grid;
@@ -475,13 +503,13 @@ header {
 
 .specialmenu-cafe-name.item1 {
     grid-area: item1;
-    font-size: 30px;
+    font-size: 1.5rem;
     color: var(--cor3);
     font-weight: 600;
 }
 .specialmenu-cafe-views.item2 {
     grid-area: item2;
-    font-size: 30px;
+    font-size: 1.5rem;
     color: var(--cor3);
     font-weight: bold;
     text-align: center;
@@ -514,12 +542,10 @@ header {
     height: 100%;
     display: flex;
     align-items: center;
-    /* flex-direction: row;
-    flex: 1; */
 }
 
 .clients-comments-text {
-    width: 35%;
+    /* width: 35%; */
     margin-left: 160px;
     /* margin-right: 100px */;
     /* margin: auto */
@@ -647,6 +673,24 @@ form input[type=submit]{
     left: 73%;
 }
 
+@media (max-width: 1500px) {
+    .main {
+        /* padding-left: 250px; */
+    }
+    .background-abouthus {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1105px) {
+}
+
+
+@media (max-width: 1000px) { 
+    html {
+        font-size: 15px;
+    }
+}
 
 
 
@@ -657,3 +701,5 @@ form input[type=submit]{
 /* tudo está alinhado pelo content que tem 1500px, talvez para deixar a imagem na largura toda, eu tenha que definir cada section com o width de 1500px e quando não quiser, posso tirar */
 
 /* colocar um google maps no final */
+
+/* deixar mais bem feito a estrutura, usar mais repetidamente as classes, por ex: todos os títulos com linha em baixo tem o mesmo código, mas no popular now não tem */
