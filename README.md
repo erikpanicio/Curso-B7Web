@@ -11,3 +11,6 @@ https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/Formulario%20de%20Cadas
 
 ### Cafe Street (em desenvolvimento)
 https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/Cafe%20Street/index.html
+
+### Cafe Street 2 (em desenvolvimento)
+https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/Cafe%20Street2/index.html
