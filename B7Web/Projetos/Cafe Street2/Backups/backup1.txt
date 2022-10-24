@@ -1,0 +1,182 @@
+<!--Feito até o subtítulo-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Street</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background">
+        <header>
+            <nav class="container">
+                <ul>
+                    <div class="header-left">
+                        <li><a href="#"></a><img src="images/logo_coffe.svg" alt=""></li>
+                    </div>
+                    <div class="header-center">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Delivery</a></li>
+                    </div>
+                    <div class="header-right">
+                        <li><input type="search" name="search" id="search" placeholder="Cappuccino"></li>
+                        <li><a href="#"><img src="images/cart1.svg" alt=""></a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="contents">
+            <div class="container">
+                <p class="up">Enjoy your <span class="orange">coffee</span> before your activity</p>
+                <p class="down">Boost your productivity and build your mood white a glass of coffee in the morning</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor1: #FF902A;
+    --cor2: #db7c22;
+    --cor3: #2F2105;
+    --cor4: #5e430d;
+    --cor5: #F9D9AA;
+    --cor6: #F7EBDA;
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 20px;
+}
+
+#background {
+    background-image: url("images/background1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1500px;
+    margin: 50px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+}
+
+.header-left img {
+    width: 9rem;
+    vertical-align: middle;
+}
+
+.header-center, .header-right {
+    display: flex;
+}
+
+.header-center li {
+    margin-right: 40px;
+}
+
+.header-center li:last-child, .header-right li:last-child {
+    margin-right: 0;
+}
+
+.header-center a {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.header-center a:hover {
+    color: var(--cor1);
+}
+
+.header-right li {
+    margin-right: 20px;
+}
+
+.header-right input {
+    background-image: url("images/search.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    font-size: 0.8rem;
+    border-radius: 20px;
+}
+
+.header-right img {
+    width: 2rem;
+    text-align: center;
+}
+
+section.contents {
+    display: flex;
+    justify-content: center;
+}
+
+.container p.up {
+    font-size: 3.25rem;
+    width: 33rem;
+    font-weight: 600;
+    color: var(--cor3);
+}
+
+span.orange {
+    color: var(--cor1);
+}
+
+.container p.down {
+    font-size: 1.25rem;
+    width: 30rem;
+    color: gray;
+}
+
+@media (max-width: 1175px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 875px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 760px) { /* menu para abrir */
+
+}
