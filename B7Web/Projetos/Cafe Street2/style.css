@@ -154,11 +154,11 @@ span.orange {
 
 @media (max-width: 1175px) {
     html {
-        font-size: 16px;
+        font-size: 1.5vw;
     }
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     html {
         font-size: 14px;
     }
@@ -168,9 +168,10 @@ span.orange {
     html {
         font-size: 12px;
     }
-}
+} */
 
 @media (max-width: 760px) { /* menu para abrir */
+    
     .header-center {
         display: none; /*  */
         flex-direction: column;
@@ -182,3 +183,9 @@ span.orange {
         display: inline;
     }
 }
+
+/* @media (max-width: 500px) {
+    html {
+        font-size: 2vw;
+    }
+} */
