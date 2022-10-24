@@ -163,15 +163,19 @@ span.orange {
         font-size: 14px;
     }
 }
+*/
 
-@media (max-width: 875px) {
+/* @media (max-width: 875px) {
     html {
         font-size: 12px;
     }
-} */
+}
+ */
 
-@media (max-width: 760px) { /* menu para abrir */
-    
+@media (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
     .header-center {
         display: none; /*  */
         flex-direction: column;
@@ -182,6 +186,13 @@ span.orange {
     #button-mobile {
         display: inline;
     }
+}
+
+@media (max-width: 620px) { /* menu para abrir */
+    html {
+        font-size: 2.5vw;
+    }
+    
 }
 
 /* @media (max-width: 500px) {
