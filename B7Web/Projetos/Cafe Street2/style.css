@@ -88,6 +88,7 @@ header li {
     padding: 0.5rem 0.5rem 0.5rem 2rem;
     font-size: 0.8rem;
     border-radius: 20px;
+    box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.212);
 }
 
 .header-right img {
@@ -98,6 +99,14 @@ header li {
 #button-mobile {
     display: none;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--cor3);
+    color: white;
+}
+
+#button-mobile:hover {
+    background-color: var(--cor4);
 }
 
 section.contents {
@@ -115,6 +124,7 @@ section.contents {
     font-weight: 600;
     color: var(--cor3);
     margin-bottom: 30px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.212);
 }
 
 span.orange {
@@ -126,6 +136,7 @@ span.orange {
     width: 30rem;
     color: gray;
     margin-bottom: 30px;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .contents .button {
