@@ -25,7 +25,7 @@ html {
 }
 
 #background {
-    background-image: url("images/background1.svg");
+    background-image: url("images/background1A.svg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -159,6 +159,9 @@ span.orange {
 @media (max-width: 1175px) {
     html {
         font-size: 1.8vw;
+    }
+    #background {
+        background-image: url("images/background1B.svg");
     }
 }
 
