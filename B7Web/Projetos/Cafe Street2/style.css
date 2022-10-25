@@ -154,30 +154,22 @@ span.orange {
 
 @media (max-width: 1175px) {
     html {
-        font-size: 1.5vw;
+        font-size: 1.8vw;
     }
 }
 
-/* @media (max-width: 1000px) {
-    html {
-        font-size: 14px;
-    }
-}
-*/
-
-/* @media (max-width: 875px) {
-    html {
-        font-size: 12px;
-    }
-}
- */
-
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
     html {
         font-size: 16px;
     }
+}
+
+@media (max-width: 920px) {
+    html {
+        font-size: 20px;
+    }
     .header-center {
-        display: none; /*  */
+        display: none; 
         flex-direction: column;
     }
     .header-right {
@@ -188,15 +180,73 @@ span.orange {
     }
 }
 
-@media (max-width: 620px) { /* menu para abrir */
+@media (max-width: 775px) {
+    html {
+        font-size: 2.8vw;
+    }
+}
+
+/* 
+@media (max-width: 900px) {
+    html {
+        font-size: 16px;
+    }
+    .header-center {
+        display: none; 
+        flex-direction: column;
+    }
+    .header-right {
+        display: none;
+    }
+    #button-mobile {
+        display: inline;
+    }
+}
+
+@media (max-width: 620px) {
     html {
         font-size: 2.5vw;
     }
+    .header-left img {
+        width: 20rem;
+    }
     
+} */
+
+
+/* 
+
+PADRÃO
+
+@media (max-width: 1175px) {
+    html {
+        font-size: 16px;
+    }
 }
 
-/* @media (max-width: 500px) {
+@media (max-width: 1000px) {
     html {
-        font-size: 2vw;
+        font-size: 14px;
     }
-} */
+}
+
+@media (max-width: 875px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 760px) {
+    .header-center {
+        display: none;
+        flex-direction: column;
+    }
+    .header-right {
+        display: none;
+    }
+    #button-mobile {
+        display: inline;
+    }
+}
+
+*/
