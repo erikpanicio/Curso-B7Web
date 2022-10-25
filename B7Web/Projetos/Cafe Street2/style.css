@@ -109,16 +109,16 @@ header li {
     background-color: var(--cor4);
 }
 
-section.contents {
+.contents { /* alinha dentro do container */
     display: flex;
     justify-content: center;
 }
 
-.contents .container {
+.apresentation .container {
     margin-top: 0;
 }
 
-.contents p.up {
+.apresentation p.up {
     font-size: 3.25rem;
     width: 33rem;
     font-weight: 600;
@@ -131,7 +131,7 @@ span.orange {
     color: var(--cor1);
 }
 
-.contents p.down {
+.apresentation p.down {
     font-size: 1.25rem;
     width: 30rem;
     color: gray;
@@ -139,7 +139,7 @@ span.orange {
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-.contents .button {
+.apresentation .button {
     background-color: var(--cor3);
     background-image: url("images/cart2.svg");
     background-repeat: no-repeat;
@@ -154,17 +154,115 @@ span.orange {
     margin-right: 50px;
 }
 
-.contents .button:hover {
+.apresentation .button:hover {
     background-color: var(--cor4);
 }
 
-.contents a {
+.apresentation a {
     color: var(--cor1);
     font-weight: 700;
 }
 
-.contents a:hover {
+.apresentation a:hover {
     color: var(--cor2);
+}
+
+.popular-now .box-photos {
+    background-color: var(--cor5);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-photo {
+    background-color: white;
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+}
+
+.rating {
+    width: 51px;
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: -325px;
+    right: -15px;
+}
+
+.rating img {
+    width: 18px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+
+.coffee-photo img {
+    border-radius: 20px;
+}
+
+.desc {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+        "coffee-name coffee-name coffee-name coffee-name coffee-name coffee-name coffee-name coffee-name coffee-name coffee-view"
+        "coffee-type coffee-type coffee-type coffee-type coffee-type coffee-type coffee-type coffee-type coffee-type coffee-cart"
+    ;
+}
+
+.coffee-name {
+    grid-area: coffee-name;
+    font-size: 28px;
+    font-weight: 600;
+}
+.coffee-view {
+    grid-area: coffee-view;
+    font-size: 28px;
+    font-weight: 600;
+}
+.coffee-type {
+    grid-area: coffee-type;
+    font-weight: 600;
+    align-items: center;
+}
+.coffee-cart {
+    grid-area: coffee-cart;
+}
+
+.coffee-type {
+    display: flex;
+}
+.coffee-type-hot span{
+    margin-right: 10px;
+    background-color: white;
+    border: 3px solid rgba(255, 166, 0, 0.6);
+    border-radius: 10px;
+    color: rgba(255, 166, 0, 0.6);
+    padding: 1px 5px;
+}
+.coffee-type-hot span:hover{
+    border: 3px solid orange;
+    color: orange;
+    cursor: pointer;
+}
+.coffee-type-cold span {
+    background-color: white;
+    border: 3px solid rgba(255, 166, 0, 0.6);
+    border-radius: 10px;
+    color: rgba(255, 166, 0, 0.6);
+    padding: 1px 5px;
+}
+.coffee-type-cold span:hover{
+    border: 3px solid orange;
+    color: orange;
+    cursor: pointer;
+}
+
+.coffee-cart img {
+    vertical-align: middle;
 }
 
 @media (max-width: 1175px) {
@@ -198,7 +296,7 @@ span.orange {
         margin-right: 20px;
     }
     .container {
-        margin: 35px 0px 25px 0px;
+        margin: 40px 0px 25px 0px;
     }
 }
 
@@ -210,69 +308,3 @@ span.orange {
         width: 160px;
     }
 }
-
-
-/* 
-@media (max-width: 900px) {
-    html {
-        font-size: 16px;
-    }
-    .header-center {
-        display: none; 
-        flex-direction: column;
-    }
-    .header-right {
-        display: none;
-    }
-    #button-mobile {
-        display: inline;
-    }
-}
-
-@media (max-width: 620px) {
-    html {
-        font-size: 2.5vw;
-    }
-    .header-left img {
-        width: 20rem;
-    }
-    
-} */
-
-
-/* 
-
-PADRÃO
-
-@media (max-width: 1175px) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 1000px) {
-    html {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 875px) {
-    html {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 760px) {
-    .header-center {
-        display: none;
-        flex-direction: column;
-    }
-    .header-right {
-        display: none;
-    }
-    #button-mobile {
-        display: inline;
-    }
-}
-
-*/
