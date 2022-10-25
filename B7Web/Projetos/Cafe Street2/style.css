@@ -51,7 +51,7 @@ header li {
 }
 
 .header-left img {
-    width: 9rem;
+    width: 180px;
     vertical-align: middle;
 }
 
@@ -190,15 +190,10 @@ span.orange {
 
 @media (max-width: 775px) {
     html {
-        font-size: 2.5vw;
-    }
-}
-
-@media (max-width: 675px) {
-    html {
         font-size: 3vw;
     }
 }
+
 
 /* 
 @media (max-width: 900px) {
