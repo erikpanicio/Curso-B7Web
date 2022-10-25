@@ -190,6 +190,12 @@ span.orange {
     }
 }
 
+@media (max-width: 675px) {
+    html {
+        font-size: 3vw;
+    }
+}
+
 /* 
 @media (max-width: 900px) {
     html {
