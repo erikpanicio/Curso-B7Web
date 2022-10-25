@@ -105,6 +105,10 @@ section.contents {
     justify-content: center;
 }
 
+.contents .container {
+    margin-top: 0;
+}
+
 .contents p.up {
     font-size: 3.25rem;
     width: 33rem;
