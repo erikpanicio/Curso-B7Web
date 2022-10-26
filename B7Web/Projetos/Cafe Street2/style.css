@@ -320,7 +320,7 @@ span.orange {
     }
 
     /* POPULAR NOW */
-    .rating {
+    /* .rating {
         top: -16rem;
         right: -0.75rem;
     }
@@ -344,7 +344,7 @@ span.orange {
     .coffee-cart img {
         vertical-align: middle;
         width: 2.5rem;
-    }
+    } */
 }
 
 @media (max-width: 775px) {
