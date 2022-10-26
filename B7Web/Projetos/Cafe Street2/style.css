@@ -333,7 +333,18 @@ span.orange {
     .coffee-view {
         font-size: 1.4rem;
     }
-
+    .coffee-type-hot span{
+        font-size: 1rem;
+        padding: 0.05rem 0.25rem;
+    }
+    .coffee-type-cold span {
+        font-size: 1rem;
+        padding: 0.05rem 0.25rem;
+    }
+    .coffee-cart img {
+        vertical-align: middle;
+        width: 2.5rem;
+    }
 }
 
 @media (max-width: 775px) {
