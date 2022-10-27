@@ -37,7 +37,7 @@ header {
 
 .container {
     width: 1500px;
-    margin: 50px;
+    margin: 50px 1rem;
 }
 
 header ul {
@@ -119,8 +119,8 @@ header li {
 }
 
 .apresentation p.up {
-    font-size: 3.25rem;
-    width: 33rem;
+    font-size: 65px;
+    width: 660px; /* 33rem */
     font-weight: 600;
     color: var(--cor3);
     margin-bottom: 30px;
@@ -132,8 +132,8 @@ header li {
 }
 
 .apresentation p.down {
-    font-size: 1.25rem;
-    width: 30rem;
+    font-size: 25px;
+    width: 600px;
     color: gray;
     margin-bottom: 30px;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
@@ -143,12 +143,12 @@ header li {
     background-color: var(--cor3);
     background-image: url("images/cart2.svg");
     background-repeat: no-repeat;
-    background-position: 7.15rem center;
-    background-size: 1.5rem;
+    background-position: 143px center;
+    background-size: 30px;
     color: white;
-    padding: 0.75rem 3rem 0.75rem 1.5rem;
-    border-radius: 1.5rem;
-    font-size: 1rem;
+    padding: 15px 60px 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     margin-right: 50px;
@@ -168,7 +168,7 @@ header li {
 }
 
 .popular-now h2 {
-    font-size: 2.25rem;
+    font-size: 45px;
     font-weight: 600;
     margin-bottom: 50px;
 }
@@ -197,6 +197,11 @@ span.orange {
     margin: 10px;
 }
 
+.coffee-photo img {
+    width: 380px; /* 310px  15.4rem*/
+    border-radius: 20px;
+}
+
 .rating {
     width: 51px;
     background-color: white;
@@ -206,7 +211,7 @@ span.orange {
     font-size: 18px;
     font-weight: 700;
     position: relative;
-    top: -320px; /* 320 -16rem*/
+    top: -370px; /* 320 -16rem*/
     right: -15px; /* 15  -0.75rem*/
 }
 
@@ -214,11 +219,6 @@ span.orange {
     width: 18px;
     vertical-align: middle;
     margin-bottom: 3px;
-}
-
-.coffee-photo img {
-    width: 310px; /* 310px  15.4rem*/
-    border-radius: 20px;
 }
 
 .desc {
@@ -287,7 +287,7 @@ span.orange {
 
 @media (max-width: 1175px) {
     html {
-        font-size: 16px;
+        font-size: 18px;
     }
     #background {
         background-image: url("images/background1B.svg");
@@ -296,14 +296,11 @@ span.orange {
 
 @media (max-width: 1000px) {
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 920px) {
-    html {
-        font-size: 20px;
-    }
     .header-center {
         display: none; 
         flex-direction: column;
@@ -315,11 +312,15 @@ span.orange {
         display: inline;
         margin-right: 20px;
     }
-    .container {
+    /* .container {
         margin: 40px 0px 25px 0px;
-    }
+    } */
+
+
 
     /* POPULAR NOW */
+
+    /* criei isso aqui \/ porque o rating estava saindo do eixo, tentar deixar no eixo certo para não precisar usar isso aqui */
     /* .rating {
         top: -16rem;
         right: -0.75rem;
@@ -357,34 +358,46 @@ span.orange {
 
 @media (max-width: 775px) {
     html {
-        font-size: 3vw;
+        font-size: 16px;
     }
-    .header-left img {
-        width: 160px;
+    
+    .apresentation p.up {
+        font-size: 3.25rem;
+        width: 33rem;
+    }
+    .apresentation p.down {
+        width: 30rem;
     }
 }
 
-@media (max-width: 500px) { /* teste, aumenta o fundo */
+@media (max-width: 560px) { /* teste, aumenta o fundo */
+    .container {
+        
+    }
     .margin-lateral {
         margin: 0;
     }
+
     .popular-now .box-photos {
         border-radius: 0;
     }
+
     .rating {
         width: 3.2rem;
         padding: 0px 0.5rem;
         font-size: 1.2rem;
-        top: -16rem;
+        top: -37vh;
         right: -0.75rem;
     }
+
     .rating img {
         width: 1rem;
     }
+    
     .coffee-photo img {
-        width: 15.4rem;
+        width: 310px;
     }
-    .coffee-name {
+    /* .coffee-name {
         font-size: 1.4rem;
     }
     .coffee-view {
@@ -394,12 +407,15 @@ span.orange {
         font-size: 1rem;
         padding: 0.05rem 0.25rem;
     }
-    .coffee-type-cold span {
-        font-size: 1rem;
-        padding: 0.05rem 0.25rem;
-    }
+
     .coffee-cart img {
         vertical-align: middle;
         width: 2.5rem;
     }
+    .coffee-type-cold span {
+        font-size: 1rem;
+        padding: 0.05rem 0.25rem;
+    } */
 }
+
+/* Colocar rem apenas nos elementos que vão logo ser alterados, os que forem demorar muito para ser alterado colocar me px */
