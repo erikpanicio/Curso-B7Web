@@ -40,6 +40,12 @@ header {
     margin: 50px 1rem;
 }
 
+/* container do popular now, para que eu possa deixar o fundo completo, sem margin */
+.container2 {
+    width: 1500px;
+    margin: 50px 20px; /* 50px 1rem */
+}
+
 header ul {
     display: flex;
     justify-content: space-between;
@@ -244,7 +250,6 @@ span.orange {
     grid-area: coffee-type;
     font-weight: 600;
     align-items: center;
-    
 }
 .coffee-cart {
     grid-area: coffee-cart;
@@ -372,23 +377,25 @@ span.orange {
 }
 
 @media (max-width: 560px) { /* teste, aumenta o fundo */
-/*     html {
-        font-size: 1vw;
-    } */
+
     .apresentation p.up {
         font-size: 3.25rem;
         width: 90vw;
     }
     .apresentation p.down {
+        font-size: 1.25rem;
         width: 90vw;
     }
-
-    /* .container {
+    .container2 {
         margin: 50px 0px;
-    } */
+    }
 
     .margin-lateral {
         margin: 0;
+    }
+
+    .popular-now h2 {
+        /* margin-left: 20px; */
     }
 
     .popular-now .box-photos {
