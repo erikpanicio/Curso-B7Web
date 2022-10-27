@@ -371,8 +371,15 @@ span.orange {
 }
 
 @media (max-width: 560px) { /* teste, aumenta o fundo */
+    .apresentation p.up {
+        font-size: 3.25rem;
+        width: 90vw;
+    }
+    .apresentation p.down {
+        width: 90vw;
+    }
     .container {
-        
+        margin: 50px 0px;
     }
     .margin-lateral {
         margin: 0;
@@ -383,11 +390,10 @@ span.orange {
     }
 
     .rating {
-        width: 3.2rem;
+        /* width: 3.2rem;
         padding: 0px 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1.2rem; */
         top: -37vh;
-        right: -0.75rem;
     }
 
     .rating img {
@@ -397,25 +403,6 @@ span.orange {
     .coffee-photo img {
         width: 310px;
     }
-    /* .coffee-name {
-        font-size: 1.4rem;
-    }
-    .coffee-view {
-        font-size: 1.4rem;
-    }
-    .coffee-type-hot span{
-        font-size: 1rem;
-        padding: 0.05rem 0.25rem;
-    }
-
-    .coffee-cart img {
-        vertical-align: middle;
-        width: 2.5rem;
-    }
-    .coffee-type-cold span {
-        font-size: 1rem;
-        padding: 0.05rem 0.25rem;
-    } */
 }
 
 /* Colocar rem apenas nos elementos que vão logo ser alterados, os que forem demorar muito para ser alterado colocar me px */
