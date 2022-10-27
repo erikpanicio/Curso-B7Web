@@ -244,6 +244,7 @@ span.orange {
     grid-area: coffee-type;
     font-weight: 600;
     align-items: center;
+    
 }
 .coffee-cart {
     grid-area: coffee-cart;
@@ -258,7 +259,7 @@ span.orange {
     border: 3px solid #ff912aaf;
     border-radius: 10px;
     color: #ff912aaf;
-    font-size: 20px;
+    font-size: 25px;
     padding: 1px 5px;
 }
 .coffee-type-hot span:hover{
@@ -271,7 +272,7 @@ span.orange {
     border: 3px solid #ff912aaf;
     border-radius: 10px;
     color: #ff912aaf;
-    font-size: 20px;
+    font-size: 25px;
     padding: 1px 5px;
 }
 .coffee-type-cold span:hover{
@@ -416,15 +417,16 @@ span.orange {
     }
 
     .coffee-name {
-        font-size: 8vw;
+        font-size: 6vw;
     }
     .coffee-view {
-        font-size: 8vw;
+        font-size: 6vw;
     }
     .coffee-cart img{
         width: 10vw;
     }
     .coffee-type {
+        margin-top: 10px;
         margin-bottom: 20px;
     }
     .coffee-type-hot span{
