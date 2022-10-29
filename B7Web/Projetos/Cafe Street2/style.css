@@ -299,12 +299,12 @@ span.orange {
 }
 
 /* está alinhando tanto o texto quanto as imagens */
-.image {
+.box-images .image {
     text-align: center;
     margin: 0px 40px 40px 40px;
 }
 
-.image img {
+.box-images .image img {
     width: 200px;
 }
 
@@ -318,6 +318,66 @@ span.orange {
     font-size: 23px;
 }
 
+/* ABOUT US */
+
+.about-us {
+    background-image: url("images/background2.svg");
+    margin-top: 200px;
+}
+
+.about-us .container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.about-us .image img {
+    border: 10px solid white;
+    border-radius: 20px;
+    width: 430px;
+    position: relative;
+    top: -120px;
+}
+
+.about-us .text {
+    margin: 80px;
+}
+
+.about-us p.up {
+    font-size: 35px;
+    font-weight: 600;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.about-us p.down {
+    font-size: 20px;
+    color: gray;
+    width: 500px;
+    text-align: justify;
+    margin-bottom: 23px;
+}
+
+.about-us .button {
+    background-color: var(--cor3);
+    color: #ffb42a;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.about-us .button:hover {
+    background-color: var(--cor4);
+}
+
+
+.espaco {
+    margin-top: 200px;
+}
+
 @media (max-width: 1175px) {
     html {
         font-size: 18px;
@@ -325,7 +385,11 @@ span.orange {
 
     #background {
         background-image: url("images/background1B.svg");
-    } 
+    }
+
+    .about-us .image {
+        display: none;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -376,6 +440,18 @@ span.orange {
     .apresentation p.down {
         width: 30rem;
     }
+
+    .about-us .text {
+        margin: 80px 0px;
+    }
+
+    .about-us p.up {
+        width: 65vw;
+    }
+    
+    .about-us p.down {
+        width: 65vw;
+    }
 }
 
 @media (max-width: 560px) {
@@ -400,6 +476,10 @@ span.orange {
         margin: 45px;
     }
 
+    h2 {
+        text-align: center;
+    }
+
     .container2 {
         margin: 50px 0px;
     }
@@ -408,17 +488,9 @@ span.orange {
         margin: 0;
     }
 
-    h2 {
-        text-align: center;
-    }
-
     .popular-now .box-photos {
         border-radius: 0;
         padding: 0px;
-    }
-
-    .box-photo {
-        /* padding: 5vw 5vw 0px 5vw; */
     }
 
     .coffee-photo img {
