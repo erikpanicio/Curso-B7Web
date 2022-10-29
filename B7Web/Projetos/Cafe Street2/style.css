@@ -402,13 +402,13 @@ span.orange {
     /* MENU */
     .header-center {
         display: none; 
-        flex-direction: column;
         position: absolute;
         top: 85px;
-        left: 52rem;
+        left: 80vw;
         background-color: var(--cor4);
         border-radius: 20px;
         padding: 10px;
+        margin-right: 20px;
     }
     .header-center li {
         margin: 0;
@@ -440,7 +440,11 @@ span.orange {
     .apresentation p.down {
         width: 30rem;
     }
+    
 
+    .about-us {
+        margin: 0;
+    }
     .about-us .text {
         margin: 80px 0px;
     }
@@ -452,6 +456,8 @@ span.orange {
     .about-us p.down {
         width: 65vw;
     }
+
+
 }
 
 @media (max-width: 560px) {
@@ -475,6 +481,10 @@ span.orange {
     .apresentation a {
         margin: 45px;
     }
+
+    /* .button {
+        margin-left: 25%;
+    } */
 
     h2 {
         text-align: center;
@@ -509,21 +519,6 @@ span.orange {
         width: 3.5vw;
     }
 
-  /*   .rating {
-        width: 51px;
-        padding: 0px 10px;
-        font-size: 18px;
-        font-weight: 700;
-        position: relative;
-        top: -370px;
-        right: -15px;
-    }
-    
-    .rating img {
-        width: 18px;
-        margin-bottom: 3px;
-    } */
-
     .coffee-name {
         font-size: 6vw;
     }
@@ -548,3 +543,5 @@ span.orange {
 /* Colocar rem apenas nos elementos que vão logo ser alterados, os que forem demorar muito para ser alterado colocar me px */
 
 /* organizar os itens dos media queries */
+
+/* o menu que abre está andando em outro eixo, não está conseguindo o botão menu, parece que tem algo o modificando, porque até mesmo o margin-right não está sendo respeitado*/
