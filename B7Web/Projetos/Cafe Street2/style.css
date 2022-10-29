@@ -304,10 +304,6 @@ span.orange {
     margin: 0px 40px 40px 40px;
 }
 
-/* .image:nth-child(3) {
-    margin: 0;
-} */
-
 .image img {
     width: 200px;
 }
@@ -336,10 +332,6 @@ span.orange {
     html {
         font-size: 15px;
     }
-    
-    /* .image:nth-child(3) {
-        margin: 0;
-    } */
 }
 
 @media (max-width: 920px) {
@@ -348,12 +340,20 @@ span.orange {
         display: none; 
         flex-direction: column;
         position: absolute;
-        top: 90px;
-        left: 80vw;
+        top: 85px;
+        left: 52rem;
         background-color: var(--cor4);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .header-center li {
+        margin: 0;
     }
     .header-center a {
         color: white;
+    }
+    .header-center a:hover {
+        color: var(--cor1);
     }
     .header-right {
         display: none;
@@ -378,7 +378,8 @@ span.orange {
     }
 }
 
-@media (max-width: 560px) { /* teste, aumenta o fundo */
+@media (max-width: 560px) {
+    /* arrumar um jeito de deixar as imagens diminuirem pelo lado e não pela diagonal OU arrumar o rating*/
 
     .apresentation p.up {
         font-size: 3.25rem;
@@ -425,13 +426,31 @@ span.orange {
     }
 
     .rating {
-        display: none;
-        top: -37vh;
+        top: -90%;
+        width: 10vw;
+        font-size: 3.5vw;
+        padding: 0px 1.5vw;
+
     }
 
     .rating img {
-        width: 1rem;
+        width: 3.5vw;
     }
+
+  /*   .rating {
+        width: 51px;
+        padding: 0px 10px;
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        top: -370px;
+        right: -15px;
+    }
+    
+    .rating img {
+        width: 18px;
+        margin-bottom: 3px;
+    } */
 
     .coffee-name {
         font-size: 6vw;
