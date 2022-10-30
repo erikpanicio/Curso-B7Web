@@ -187,7 +187,7 @@ span.orange {
     margin: 0px 30px;
 }
 
-.popular-now .box-photos {
+.box-photos {
     background-color: var(--cor5);
     padding: 30px;
     border-radius: 20px;
@@ -250,6 +250,7 @@ span.orange {
     grid-area: coffee-type;
     font-weight: 600;
     align-items: center;
+    font-size: 20px; /* para o coffee type do special */
 }
 .coffee-cart {
     grid-area: coffee-cart;
@@ -373,10 +374,20 @@ span.orange {
     background-color: var(--cor4);
 }
 
-
-.espaco {
-    margin-top: 200px;
+.special .box-photos {
+    background-color: white;
 }
+
+.special .box-photo {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.special .coffee-type {
+    width: 250px;
+    color: gray;
+}
+
+/* Arrumar o tamanho da fonte do .special .coffee-type */
 
 @media (max-width: 1175px) {
     html {
@@ -441,7 +452,6 @@ span.orange {
         width: 30rem;
     }
     
-
     .about-us {
         margin: 0;
     }
@@ -456,8 +466,6 @@ span.orange {
     .about-us p.down {
         width: 65vw;
     }
-
-
 }
 
 @media (max-width: 560px) {
@@ -482,10 +490,6 @@ span.orange {
         margin: 45px;
     }
 
-    /* .button {
-        margin-left: 25%;
-    } */
-
     h2 {
         text-align: center;
     }
@@ -498,7 +502,7 @@ span.orange {
         margin: 0;
     }
 
-    .popular-now .box-photos {
+    .box-photos {
         border-radius: 0;
         padding: 0px;
     }
@@ -512,7 +516,6 @@ span.orange {
         width: 10vw;
         font-size: 3.5vw;
         padding: 0px 1.5vw;
-
     }
 
     .rating img {
@@ -531,12 +534,16 @@ span.orange {
     .coffee-type {
         margin-top: 10px;
         margin-bottom: 20px;
+        font-size: 3.5vw; /* para o coffee type do special */
     }
     .coffee-type-hot span{
         font-size: 5vw;
     }
     .coffee-type-cold span{
         font-size: 5vw;
+    }
+    .special .coffee-type { /* para o coffee type do special */
+        width: 40vw;
     }
 }
 
