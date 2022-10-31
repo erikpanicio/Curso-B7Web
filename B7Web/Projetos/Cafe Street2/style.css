@@ -176,7 +176,7 @@ header li {
 h2 {
     font-size: 45px;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 span.orange {
@@ -385,9 +385,79 @@ span.orange {
 .special .coffee-type {
     width: 250px;
     color: gray;
+    height: 50px;
 }
 
+/* Comments */
+
+.comments {
+    background-image: url("images/background2.svg");
+}
+
+.comments .contents {
+    padding: 100px 100px 0px 100px;
+    flex-wrap: wrap;
+}
+
+.comments .text {
+    margin-right: 30px;
+    height: 250px;
+}
+
+.text p.down {
+    font-size: 24px;
+    color: gray;
+    width: 450px;
+    /* text-align: justify;
+    margin-bottom: 23px; */
+}
+
+.box-reviews {
+    display: flex;
+}
+
+.review {
+    margin: 0px 25px;
+}
+
+.review .image img {
+    border: 5px solid #FFD390;
+    height: 300px;
+}
+
+.review .feedback {
+    background-color: #FFD390;
+    box-shadow: 0px 0px 0px 10px #f8d19694;
+    padding: 10px;
+    border-radius: 10px;
+    width: 270px;
+    position: relative;
+    top: -115px;
+    left: 30px;
+}
+
+.feedback .name {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.feedback .comment {
+    font-size: 14px;
+}
 /* Arrumar o tamanho da fonte do .special .coffee-type */
+
+@media (max-width: 1790px) {
+    .comments .text {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .text p.down {
+        text-align: center;
+        width: 100%;
+    }
+}
 
 @media (max-width: 1175px) {
     html {
@@ -544,6 +614,7 @@ span.orange {
     }
     .special .coffee-type { /* para o coffee type do special */
         width: 40vw;
+        height: 3vw;
     }
 }
 
