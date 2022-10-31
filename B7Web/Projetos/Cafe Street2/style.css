@@ -395,13 +395,13 @@ span.orange {
 }
 
 .comments .contents {
-    padding: 100px 100px 0px 100px;
+    padding: 100px 0px;
     flex-wrap: wrap;
 }
 
 .comments .text {
     margin-right: 30px;
-    height: 250px;
+    /* height: 250px; */
 }
 
 .text p.down {
@@ -451,11 +451,17 @@ span.orange {
         margin-right: 0;
         width: 100%;
         text-align: center;
+        margin-bottom: 50px;
     }
     
     .text p.down {
         text-align: center;
         width: 100%;
+    }
+    
+    .box-reviews {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
