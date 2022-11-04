@@ -37,14 +37,11 @@ header {
 
 .container {
     width: 1500px;
-    margin: 50px 1rem;
+    margin: 50px 20px;
 }
 
 /* container do popular now, para que eu possa deixar o fundo completo, sem margin */
-.container2 {
-    width: 1500px;
-    margin: 50px 20px;
-}
+
 
 header ul {
     display: flex;
@@ -395,7 +392,7 @@ span.orange {
 }
 
 .comments .contents {
-    padding: 100px 0px;
+    padding: 100px 0px 0px 0px;
     flex-wrap: wrap;
 }
 
@@ -408,16 +405,20 @@ span.orange {
     font-size: 24px;
     color: gray;
     width: 450px;
-    /* text-align: justify;
-    margin-bottom: 23px; */
 }
 
 .box-reviews {
     display: flex;
+    margin: 0px 40px;
 }
 
 .review {
-    margin: 0px 25px;
+    margin: 0px 40px;
+}
+
+.review .image { /* OLHAR */ /* centraliza a imagem */
+    justify-content: center;
+    display: flex;
 }
 
 .review .image img {
@@ -430,10 +431,10 @@ span.orange {
     box-shadow: 0px 0px 0px 10px #f8d19694;
     padding: 10px;
     border-radius: 10px;
-    width: 270px;
+    width: 270px; /* 270px */
     position: relative;
     top: -115px;
-    left: 30px;
+    left: 55px; /* 30px */
 }
 
 .feedback .name {
@@ -444,7 +445,54 @@ span.orange {
 .feedback .comment {
     font-size: 14px;
 }
-/* Arrumar o tamanho da fonte do .special .coffee-type */
+
+footer .container { /* remover o container e deixar o footer na área completa */
+    width: 100%;
+    background-image: url("images/footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border-radius: 20px; */
+    padding: 100px 0px;
+    margin: 80px 0px 0px 0px;
+}
+
+footer p {
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin: 20px;
+    text-align: center;
+}
+
+footer input[type=email] {
+    width: 600px;
+    padding: 20px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer input[type=submit] {
+    background-color: var(--cor3);
+    color: white;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 20px;
+    position: relative;
+    top: -65px;
+    left: 230px;
+    cursor: pointer;
+}
+
+footer input[type=submit]:hover {
+    background-color: var(--cor4);
+}
+/* arrumar o feedback, esta vazando um pouco, as imagens estão quebrando meio atrasadas por causa do box-reviews que está um pouco menor */
 
 @media (max-width: 1790px) {
     .comments .text {
@@ -542,6 +590,15 @@ span.orange {
     .about-us p.down {
         width: 65vw;
     }
+
+    footer input[type=email] {
+        width: 400px;
+    }
+    
+    footer input[type=submit] {
+        top: -65px;
+        left: 130px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -570,7 +627,7 @@ span.orange {
         text-align: center;
     }
 
-    .container2 {
+    .container {
         margin: 50px 0px;
     }
 
@@ -621,6 +678,32 @@ span.orange {
     .special .coffee-type { /* para o coffee type do special */
         width: 40vw;
         height: 3vw;
+    }
+
+    .review .feedback {
+        width: 50vw;
+    }
+
+    .feedback .name {
+        font-size: 3.5vw;
+    }
+    .feedback .comment {
+        font-size: 3vw;
+    }
+
+    footer .container {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    footer input[type=email] {
+        width: 60vw;
+    }
+    
+    footer input[type=submit] {
+        top: 0;
+        left: 0;
+        margin-top: 30px;
     }
 }
 
