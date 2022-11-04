@@ -698,6 +698,7 @@ footer input[type=submit]:hover {
 
     footer input[type=email] {
         width: 60vw;
+        text-align: center;
     }
     
     footer input[type=submit] {
