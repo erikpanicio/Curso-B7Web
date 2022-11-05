@@ -353,7 +353,7 @@ span.orange {
     font-size: 20px;
     color: gray;
     width: 500px;
-    text-align: justify;
+    text-align: left;
     margin-bottom: 23px;
 }
 
@@ -401,7 +401,7 @@ span.orange {
     /* height: 250px; */
 }
 
-.text p.down {
+.comments .text p.down {
     font-size: 24px;
     color: gray;
     width: 450px;
@@ -503,8 +503,8 @@ footer input[type=submit]:hover {
         margin-bottom: 50px;
     }
     
-    .text p.down {
-        text-align: center;
+    .comments .text p.down {
+        /* text-align: center; */
         width: 100%;
     }
     
@@ -585,11 +585,13 @@ footer input[type=submit]:hover {
     }
 
     .about-us p.up {
-        width: 65vw;
+        width: 85vw;
+        /* font-size: 10vw; */
     }
     
     .about-us p.down {
-        width: 65vw;
+        width: 85vw;
+        /* font-size: 6.5vw; */
     }
 
     footer input[type=email] {
@@ -710,6 +712,14 @@ footer input[type=submit]:hover {
 }
 
 @media (max-width: 475px) {
+    .about-us p.up {
+        font-size: 8vw;
+    }
+    
+    .about-us p.down {
+        font-size: 4.5vw;
+    }
+
     .review .feedback {
         width: 65vw;
         top: -26vw;
