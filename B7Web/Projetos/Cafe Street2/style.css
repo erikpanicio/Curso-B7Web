@@ -195,7 +195,7 @@ span.orange {
 
 .box-photo {
     background-color: white;
-    padding: 15px 15px 0px 15px;
+    padding: 20px 20px 0px 20px;
     border-radius: 20px;
     margin: 10px;
 }
@@ -620,7 +620,7 @@ footer input[type=submit]:hover {
 
     .apresentation .button {
         display: block;
-        margin-bottom: 20px;
+        margin: 0px 0px 20px 0px;
     }
 
     .apresentation a {
@@ -670,7 +670,7 @@ footer input[type=submit]:hover {
     }
     .coffee-type {
         margin-top: 10px;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         font-size: 3.5vw; /* para o coffee type do special */
     }
     .coffee-type-hot span{
