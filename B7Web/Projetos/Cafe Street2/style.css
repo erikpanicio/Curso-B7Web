@@ -718,6 +718,10 @@ footer input[type=submit]:hover {
         font-size: 4.5vw;
     }
 
+    .box-photo {
+        padding: 15px 15px 0px 15px;
+    }
+
     .review .feedback {
         width: 65vw;
         top: -26vw;
