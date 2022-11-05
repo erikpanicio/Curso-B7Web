@@ -712,13 +712,12 @@ footer input[type=submit]:hover {
 @media (max-width: 475px) {
     .review .feedback {
         width: 65vw;
-        top: -27vw;
+        top: -26vw;
         left: 0;
-        /* height: 70px; */
     }
 
     .review .image img {
-        height: 60vw;
+        height: 70vw;
     }
 
     .feedback .name {
