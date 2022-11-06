@@ -117,11 +117,11 @@ header li {
     justify-content: center;
 }
 
-.apresentation .container {
+#apresentation .container {
     margin-top: 0;
 }
 
-.apresentation p.up {
+#apresentation p.up {
     font-size: 65px;
     width: 660px;
     font-weight: 600;
@@ -130,11 +130,11 @@ header li {
     text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-.apresentation span {
+#apresentation span {
     color: var(--cor1);
 }
 
-.apresentation p.down {
+#apresentation p.down {
     font-size: 25px;
     width: 600px;
     color: gray;
@@ -142,7 +142,7 @@ header li {
     text-shadow: 10px 5px 10px rgba(0, 0, 0, 0.212);
 }
 
-.apresentation .button {
+#apresentation .button {
     background-color: var(--cor3);
     background-image: url("images/cart2.svg");
     background-repeat: no-repeat;
@@ -157,16 +157,16 @@ header li {
     margin-right: 50px;
 }
 
-.apresentation .button:hover {
+#apresentation .button:hover {
     background-color: var(--cor4);
 }
 
-.apresentation a {
+#apresentation a {
     color: var(--cor1);
     font-weight: 700;
 }
 
-.apresentation a:hover {
+#apresentation a:hover {
     color: var(--cor2);
 }
 
@@ -306,31 +306,31 @@ span.orange {
     width: 200px;
 }
 
-.delivery p.up {
+#delivery p.up {
     color: var(--cor3);
     font-size: 30px;
     font-weight: 600;
 }
 
-.delivery p.down {
+#delivery p.down {
     font-size: 23px;
 }
 
 /* ABOUT US */
 
-.about-us {
+#about-us {
     background-image: url("images/background2.svg");
     margin-top: 200px;
 }
 
-.about-us .container {
+#about-us .container {
     width: 1200px;
     display: flex;
     justify-content: space-around;
     margin: 0;
 }
 
-.about-us .image img {
+#about-us .image img {
     border: 10px solid white;
     border-radius: 20px;
     width: 430px;
@@ -339,18 +339,18 @@ span.orange {
     box-shadow: 0px 0px 30px 5px rgb(0 0 0 / 20%);
 }
 
-.about-us .text {
+#about-us .text {
     margin: 80px;
 }
 
-.about-us p.up {
+#about-us p.up {
     font-size: 35px;
     font-weight: 600;
     width: 500px;
     margin-bottom: 20px;
 }
 
-.about-us p.down {
+#about-us p.down {
     font-size: 20px;
     color: gray;
     width: 500px;
@@ -358,7 +358,7 @@ span.orange {
     margin-bottom: 23px;
 }
 
-.about-us .button {
+#about-us .button {
     background-color: var(--cor3);
     color: #ffb42a;
     padding: 15px 20px;
@@ -368,19 +368,19 @@ span.orange {
     cursor: pointer;
 }
 
-.about-us .button:hover {
+#about-us .button:hover {
     background-color: var(--cor4);
 }
 
-.special .box-photos {
+#special .box-photos {
     background-color: white;
 }
 
-.special .box-photo {
+#special .box-photo {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.special .coffee-type {
+#special .coffee-type {
     width: 250px;
     color: gray;
     height: 50px;
@@ -388,21 +388,21 @@ span.orange {
 
 /* Comments */
 
-.comments {
+#comments {
     background-image: url("images/background2.svg");
 }
 
-.comments .contents {
+#comments .contents {
     padding: 100px 0px 0px 0px;
     flex-wrap: wrap;
 }
 
-.comments .text {
+#comments .text {
     margin-right: 30px;
     /* height: 250px; */
 }
 
-.comments .text p.down {
+#comments .text p.down {
     font-size: 24px;
     color: gray;
     width: 450px;
@@ -494,14 +494,14 @@ footer input[type=submit]:hover {
 /* arrumar o feedback, esta vazando um pouco, as imagens estão quebrando meio atrasadas por causa do box-reviews que está um pouco menor */
 
 @media (max-width: 1790px) {
-    .comments .text {
+    #comments .text {
         margin-right: 0;
         width: 100%;
         text-align: center;
         margin-bottom: 50px;
     }
     
-    .comments .text p.down {
+    #comments .text p.down {
         /* text-align: center; */
         width: 100%;
     }
@@ -521,7 +521,7 @@ footer input[type=submit]:hover {
         background-image: url("images/background1B.svg");
     }
 
-    .about-us .image {
+    #about-us .image {
         display: none;
     }
 }
@@ -567,27 +567,27 @@ footer input[type=submit]:hover {
         font-size: 16px;
     }
     
-    .apresentation p.up {
+    #apresentation p.up {
         font-size: 3.25rem;
         width: 33rem;
     }
-    .apresentation p.down {
+    #apresentation p.down {
         width: 30rem;
     }
     
-    .about-us {
+    #about-us {
         margin: 0;
     }
-    .about-us .text {
+    #about-us .text {
         margin: 80px 0px;
     }
 
-    .about-us p.up {
+    #about-us p.up {
         width: 85vw;
         /* font-size: 10vw; */
     }
     
-    .about-us p.down {
+    #about-us p.down {
         width: 85vw;
         /* font-size: 6.5vw; */
     }
@@ -605,12 +605,12 @@ footer input[type=submit]:hover {
 @media (max-width: 560px) {
     /* arrumar um jeito de deixar as imagens diminuirem pelo lado e não pela diagonal OU arrumar o rating*/
 
-    .apresentation p.up {
+    #apresentation p.up {
         font-size: 3.25rem;
         width: 90vw;
     }
 
-    .apresentation p.down {
+    #apresentation p.down {
         font-size: 1.25rem;
         width: 90vw;
     }
@@ -621,12 +621,12 @@ footer input[type=submit]:hover {
         flex-wrap: wrap;
     }
 
-    .apresentation .button {
+    #apresentation .button {
         /* display: block; */
         margin: 0px 0px 20px 0px;
     }
 
-    .apresentation a {
+    #apresentation a {
         /* margin: 45px; */
         /* flex-direction: column; */
         flex: 100%;
@@ -637,7 +637,7 @@ footer input[type=submit]:hover {
         text-align: center;
     }
 
-    .popular-now .container {
+    #popular-now .container {
         margin: 50px 0px;
     }
 
@@ -685,7 +685,7 @@ footer input[type=submit]:hover {
     .coffee-type-cold span{
         font-size: 5vw;
     }
-    .special .coffee-type { /* para o coffee type do special */
+    #special .coffee-type { /* para o coffee type do special */
         width: 40vw;
         height: 3vw;
     }
@@ -718,15 +718,11 @@ footer input[type=submit]:hover {
 }
 
 @media (max-width: 475px) {
-    .box-images .image img {
-        
-    }
-
-    .about-us p.up {
+    #about-us p.up {
         font-size: 8vw;
     }
     
-    .about-us p.down {
+    #about-us p.down {
         font-size: 4.5vw;
     }
 
