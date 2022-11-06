@@ -459,7 +459,7 @@ footer .footer-box {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px;
+    padding: 80px 0px;
     margin: 80px 0px 0px 0px;
     backdrop-filter: blur(10px);
 }
