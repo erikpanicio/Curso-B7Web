@@ -615,13 +615,22 @@ footer input[type=submit]:hover {
         width: 90vw;
     }
 
+    .box-button {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .apresentation .button {
-        display: block;
+        /* display: block; */
         margin: 0px 0px 20px 0px;
     }
 
     .apresentation a {
-        margin: 45px;
+        /* margin: 45px; */
+        /* flex-direction: column; */
+        flex: 100%;
+        text-align: center;
     }
 
     h2 {
@@ -646,14 +655,14 @@ footer input[type=submit]:hover {
     }
 
     .rating {
-        top: -90%;
-        width: 10vw;
-        font-size: 3.5vw;
+        top: -88%;
+        width: 13vw;
+        font-size: 4.5vw;
         padding: 0px 1.5vw;
     }
 
     .rating img {
-        width: 3.5vw;
+        width: 4.5vw;
     }
 
     .coffee-name {
@@ -692,8 +701,7 @@ footer input[type=submit]:hover {
         font-size: 3vw;
     } */
     
-    footer .container {
-        border-radius: 0;
+    footer .footer-box{
         margin: 0;
     }
 
@@ -710,6 +718,10 @@ footer input[type=submit]:hover {
 }
 
 @media (max-width: 475px) {
+    .box-images .image img {
+        
+    }
+
     .about-us p.up {
         font-size: 8vw;
     }
@@ -724,7 +736,7 @@ footer input[type=submit]:hover {
 
     .review .feedback {
         width: 65vw;
-        top: -26vw;
+        top: -25vw;
         left: 0;
     }
 
