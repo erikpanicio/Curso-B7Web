@@ -727,7 +727,7 @@ footer input[type=submit]:hover {
 
 @media (max-width: 475px) {
     #apresentation p.up {
-        font-size: 10vw;
+        font-size: 15vw;
     }
     #about-us p.up {
         font-size: 8vw;
