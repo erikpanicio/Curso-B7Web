@@ -104,12 +104,12 @@ header li {
     cursor: pointer;
     padding: 10px;
     border-radius: 20px;
-    background-color: var(--cor3);
+    background-color: var(--cor4);
     color: white;
 }
 
 #button-mobile:hover {
-    background-color: var(--cor4);
+    background-color: var(--cor3);
 }
 
 .contents { /* alinha dentro do container */
@@ -551,6 +551,9 @@ footer input[type=submit]:hover {
     }
     .header-center li {
         margin: 0;
+        margin-bottom: 5px;
+        text-align: center;
+        border-bottom: 3px solid #7c5912;
     }
     .header-center a {
         color: white;
@@ -723,6 +726,9 @@ footer input[type=submit]:hover {
 }
 
 @media (max-width: 475px) {
+    #apresentation p.up {
+        font-size: 10vw;
+    }
     #about-us p.up {
         font-size: 8vw;
     }
