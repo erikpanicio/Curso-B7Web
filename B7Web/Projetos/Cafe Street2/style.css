@@ -507,11 +507,11 @@ footer input[type=submit]:hover {
     }
     
     #comments .text p.down {
-        /* text-align: center; */
         width: 100%;
     }
     
     .box-reviews {
+        width: 100%; /* teste */
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -726,18 +726,17 @@ footer input[type=submit]:hover {
 }
 
 @media (max-width: 475px) {
-    .header-left img {
+    .header-left img { /* teste */
         width: 40vw;
     }
-
     
     #apresentation p.up {
         font-size: 15vw;
     }
 
-    /* .box-images .image img {
-        height: 10vw;
-    } */
+    .box-images .image img { /* teste */
+        height: 42vw;
+    }
 
 
     #about-us p.up {
