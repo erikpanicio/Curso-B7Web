@@ -303,7 +303,7 @@ span.orange {
 }
 
 .box-images .image img {
-    width: 200px;
+    height: 200px; /* width: 200px */
 }
 
 #delivery p.up {
@@ -726,9 +726,20 @@ footer input[type=submit]:hover {
 }
 
 @media (max-width: 475px) {
+    .header-left img {
+        width: 40vw;
+    }
+
+    
     #apresentation p.up {
         font-size: 15vw;
     }
+
+    /* .box-images .image img {
+        height: 10vw;
+    } */
+
+
     #about-us p.up {
         font-size: 8vw;
     }
