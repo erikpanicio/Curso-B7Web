@@ -63,7 +63,7 @@ header {
     background-color: #0079E7;
     color: white;
     padding: 10px;
-    margin-right: 55px;
+    margin: 0px 35px; /* margin-right: 55px; */
     cursor: pointer;
 }
 
