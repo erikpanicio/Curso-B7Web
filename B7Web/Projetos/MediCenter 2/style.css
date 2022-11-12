@@ -143,12 +143,22 @@ header {
 
 .banner.item3 .time {
     display: flex;
-    justify-content: space-between;
     margin: 20px 0px;
+}
+
+/* para que o border-bottom fique na linha inteira */
+.day {
+    width: 50%;
+    text-align: left;
+}
+.hour {
+    width: 50%;
+    text-align: right;
 }
 
 .banner.item3 .time p {
     margin-bottom: 10px;
+    border-bottom: 1px solid gray;
 }
 
 @media (max-width: 875px) {
@@ -197,5 +207,11 @@ header {
 
     #apresentation p.down {
         font-size: 5vw;
+    }
+}
+
+@media (max-width: 275px) {
+    .day, .hour {
+        font-size: 5.5vw;
     }
 }
