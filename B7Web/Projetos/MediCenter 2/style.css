@@ -35,6 +35,14 @@ header {
     width: 100%;
 }
 
+.logo {
+    margin: 0px 20px;
+}
+
+.logo img {
+    width: 100%;
+}
+
 .header-flex ul {
     display: flex;
     list-style: none;
@@ -79,7 +87,8 @@ header {
     width: 400px;
     color: white;
     text-shadow: 2px 2px 5px black;
-    margin-top: 80px;
+    margin: 80px 0px 0px 20px;
+    /* padding-left: 20px; */
 }
 
 #apresentation p.up {
@@ -90,6 +99,7 @@ header {
 #apresentation p.down {
     font-size: 20px;
     margin-top: 30px;
+    width: 80%;
 }
 
 .banners { /* talvez eu deva colocar #apresentation banners */
@@ -177,5 +187,15 @@ header {
 }
 
 @media (max-width: 420px) { /* quando o texto do apresentation chega no limite */
+    #apresentation .title {
+        width: 80%;
+    }
 
+    #apresentation p.up {
+        font-size: 15vw;
+    }
+
+    #apresentation p.down {
+        font-size: 5vw;
+    }
 }
