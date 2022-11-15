@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 
 * {
@@ -6,6 +7,7 @@
     padding: 0;
     outline: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 html {
@@ -105,7 +107,7 @@ header {
 .banners { /* talvez eu deva colocar #apresentation banners */
     margin-top: 80px;
     display: flex;
-    height: 210px; /* 190px */
+    /* height: 210px; */ /* 190px */
 }
 
 .banner {
@@ -123,10 +125,11 @@ header {
     font-size: 16px;
 }
 
-.banner a {
+.banner a { /* display inline nao tem margin-top e bottom?? */
     color: white;
     border: 1px solid white;
     padding: 5px;
+    margin-bottom: 10px;
 }
 
 .banner.item1 {
@@ -146,6 +149,11 @@ header {
     margin: 20px 0px;
 }
 
+.banner.item3 .time p {
+    margin-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+
 /* para que o border-bottom fique na linha inteira */
 .day {
     width: 50%;
@@ -156,9 +164,99 @@ header {
     text-align: right;
 }
 
-.banner.item3 .time p {
-    margin-bottom: 10px;
-    border-bottom: 1px solid gray;
+main .container {
+    /* background-color: aquamarine; */
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+
+article {
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 10px;
+    width: 666px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+span.blue-line {
+    border-bottom: 3px solid #39aae1;
+}
+
+
+.box-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news {
+    width: 310px;
+}
+
+.datas {
+    display: flex;
+    margin: 10px 0px 20px 0px;
+}
+
+.date {
+    background-color: #2B4C99;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.commentaries {
+    background-color: #39aae1;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+}
+
+article img {
+    width: 310px;
+    height: 190px;
+}
+
+article .title {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+article .desc {
+    font-size: 14px;
+}
+
+aside {
+    /* background-color: purple; */
+    width: 334px;
+}
+
+aside img {
+    width: 50%;
+}
+
+.departments {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    
+
+    /* padding: 5px; */
+    gap: 20px;
+}
+
+.departments .image {
+    background-color: #0079E7;
+    width: 150px;
+    height: 150px;
+    /* margin: 0px 10px; */
 }
 
 @media (max-width: 875px) {
@@ -192,7 +290,8 @@ header {
     }
 
     .banners {
-        flex-wrap: wrap;
+        flex-direction: column;
+        /* flex-wrap: wrap; */ /* qual usar??? */
     }
 }
 
