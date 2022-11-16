@@ -175,7 +175,7 @@ article {
     display: flex;
     flex-wrap: wrap;
     padding-right: 10px;
-    width: 666px;
+    width: 67%;
 }
 
 h3 {
@@ -234,7 +234,7 @@ article .desc {
 
 aside {
     /* background-color: purple; */
-    width: 334px;
+    width: 34%;
 }
 
 aside img {
@@ -253,7 +253,7 @@ aside img {
 }
 
 .departments .image {
-    background-color: #0079E7;
+    background-color: #2B4C99;
     width: 150px;
     height: 150px;
     /* margin: 0px 10px; */
