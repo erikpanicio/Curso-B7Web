@@ -261,10 +261,8 @@ aside img {
 } */
 
 @media (max-width: 970px) {
-    /* .box-news {
-        justify-content: center;
-    } */
-    article img {
+
+    /* article img {
         width: 32vw;
         height: 20vw;
     }
@@ -273,6 +271,25 @@ aside img {
         width: 30vw;
     }
 
+    .departments .image {
+        width: 15.5vw;
+        height: 15.5vw;
+    } */
+}
+
+@media (max-width: 969px) {
+    .box-news {
+        justify-content: center;
+    }
+
+    .news {
+        /* width: 100%; */
+    }
+
+    article img {
+        /* width: 100%;
+        height: 100%; */
+    }
 }
 
 @media (max-width: 875px) {
@@ -309,6 +326,10 @@ aside img {
         flex-direction: column;
         /* flex-wrap: wrap; */ /* qual usar??? */
     }
+
+    .departments {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 420px) { /* quando o texto do apresentation chega no limite */
@@ -323,9 +344,13 @@ aside img {
     #apresentation p.down {
         font-size: 5vw;
     }
+
+    main .container {
+        flex-wrap: wrap;
+    }
 }
 
-@media (max-width: 275px) {
+@media (max-width: 275px) { /* para deixar o opening hours bem responsivo*/
     .day, .hour {
         font-size: 5.5vw;
     }
