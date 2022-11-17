@@ -218,6 +218,7 @@ span.blue-line {
 article img {
     width: 310px;
     height: 190px;
+    border: 5px solid #2B4C99;
 }
 
 article .title {
@@ -324,6 +325,25 @@ aside img {
     }
 }
 
+@media (max-width: 650px) {
+    main .container {
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: auto;
+        padding: 0;
+    }
+    
+    aside {
+        width: 100%;
+    }
+
+    .departments .image {
+        margin: 20px;
+    }
+}
+
 @media (max-width: 420px) { /* quando o texto do apresentation chega no limite */
     #apresentation .title {
         width: 80%;
@@ -335,14 +355,6 @@ aside img {
 
     #apresentation p.down {
         font-size: 5vw;
-    }
-
-    main .container {
-        flex-wrap: wrap;
-    }
-
-    article {
-        width: auto;
     }
 }
 
