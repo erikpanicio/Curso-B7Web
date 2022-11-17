@@ -65,7 +65,7 @@ header {
     background-color: #0079E7;
     color: white;
     padding: 10px;
-    margin: 0px 40px; /* margin-right: 55px; */
+    margin: 0px 40px;
     cursor: pointer;
 }
 
@@ -90,7 +90,6 @@ header {
     color: white;
     text-shadow: 2px 2px 5px black;
     margin: 80px 0px 0px 20px;
-    /* padding-left: 20px; */
 }
 
 #apresentation p.up {
@@ -105,9 +104,9 @@ header {
 }
 
 .banners { /* talvez eu deva colocar #apresentation banners */
-    margin-top: 80px;
     display: flex;
-    /* height: 210px; */ /* 190px */
+    width: 100%;
+    margin-top: 80px;
 }
 
 .banner {
@@ -164,9 +163,7 @@ header {
     text-align: right;
 }
 
-main .container {
-    justify-content: space-between;
-}
+/* ------- */
 
 article {
     display: flex;
@@ -232,7 +229,6 @@ article .desc {
 }
 
 aside {
-    /* background-color: purple; */
     width: 34%;
 }
 
@@ -244,7 +240,6 @@ aside img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
 }
 
 .departments .image {
@@ -254,21 +249,52 @@ aside img {
     margin-bottom: 20px;
 }
 
-@media (max-width: 970px) {
+footer {
+    background-color: #1e1e1e;
+}
 
-    /* article img {
-        width: 32vw;
-        height: 20vw;
-    }
+footer .container {
+    flex-wrap: wrap;
+}
 
-    .news {
-        width: 30vw;
-    }
+footer .banners {
+    margin: 0;
+}
 
-    .departments .image {
-        width: 15.5vw;
-        height: 15.5vw;
-    } */
+.informations {
+    display: flex;
+}
+
+.informations h3 {
+    color: white;
+}
+
+.informations p {
+    color: gray;
+}
+
+.information {
+    width: 100%;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.information a {
+    color: white;
+}
+
+.medicenter-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address, .contact {
+    line-height: 20px;
+}
+
+p.year {
+    color: #39aae1;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 969px) {
@@ -286,7 +312,7 @@ aside img {
     }
 }
 
-@media (max-width: 875px) {
+@media (max-width: 883px) {
     .header-flex ul {
         display: none;
         flex-direction: column;
@@ -318,11 +344,19 @@ aside img {
 
     .banners {
         flex-direction: column;
-        /* flex-wrap: wrap; */ /* qual usar??? */
+    }
+
+    main .container {
+        padding: 20px;
     }
 
     .departments {
         justify-content: center;
+    }
+
+    .informations {
+        flex-wrap: wrap;
+        padding: 20px;
     }
 }
 
@@ -363,4 +397,8 @@ aside img {
     .day, .hour {
         font-size: 5.5vw;
     }
+
+    /* main .container {
+        padding: 0;
+    } */
 }
