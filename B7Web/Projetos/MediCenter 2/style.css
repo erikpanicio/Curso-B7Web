@@ -163,8 +163,6 @@ header {
     text-align: right;
 }
 
-/* ------- */
-
 article {
     display: flex;
     flex-direction: column;
@@ -313,7 +311,7 @@ p.year {
 }
 
 @media (max-width: 883px) {
-    .header-flex ul {
+.header-flex ul {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -340,6 +338,10 @@ p.year {
 
     .button-mobile {
         display: block;
+    }
+
+    #apresentation {
+        background-size: auto;
     }
 
     .banners {
@@ -393,12 +395,24 @@ p.year {
     }
 }
 
-@media (max-width: 275px) { /* para deixar o opening hours bem responsivo*/
+@media (max-width: 275px) { /* para deixar o mais responsivo possível*/
     .day, .hour {
         font-size: 5.5vw;
     }
 
-    /* main .container {
+    main .container {
         padding: 0;
-    } */
+    }
+
+    .box-make {
+        font-size: 6vw;
+    }
+
+    .informations {
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 6vw;
+    }
 }
