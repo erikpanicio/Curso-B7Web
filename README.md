@@ -1,9 +1,6 @@
 # Projetos
 
-### MediCenter (não responsivo)
-https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter%20(curso)/
-
-### MediCenter 2 (em desenvolvimento)
+### MediCenter
 https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter%202/
 
 ### Tribute page
