@@ -1,7 +1,7 @@
 # Projetos
 
 ### MediCenter
-https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter%202/
+https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter/
 
 ### Cafe Street
 https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/Cafe%20Street/index.html
